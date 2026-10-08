@@ -1,0 +1,24 @@
+{
+ "search_metadata": {
+  "id": "6ac7faf6d5fd74dd2e335ddc",
+  "status": "Success",
+  "json_endpoint": "https://serpapi.com/searches/0HiCb6dkIHt1w2s-sTRzvcUi_XO17BqfhnayIysdjgs/6ac7faf6d5fd74dd2e335ddc.json",
+  "markdown_endpoint": "https://serpapi.com/searches/0HiCb6dkIHt1w2s-sTRzvcUi_XO17BqfhnayIysdjgs/6ac7faf6d5fd74dd2e335ddc.md",
+  "created_at": "2026-10-08 20:20:06 UTC",
+  "processed_at": "2026-10-08 20:20:06 UTC",
+  "google_maps_reviews_url": "https://www.google.com/maps/place/data=!4m7!3m6!1s0x3bae11a84d4cb329:0xb1b44545b4227d0d!5m2!4m1!1i2!9m1!1b1?hl=en",
+  "raw_html_file": "https://serpapi.com/searches/0HiCb6dkIHt1w2s-sTRzvcUi_XO17BqfhnayIysdjgs/6ac7faf6d5fd74dd2e335ddc.html",
+  "prettify_html_file": "https://serpapi.com/searches/0HiCb6dkIHt1w2s-sTRzvcUi_XO17BqfhnayIysdjgs/6ac7faf6d5fd74dd2e335ddc.prettify",
+  "total_time_taken": 1.14
+ },
+ "search_parameters": {
+  "engine": "google_maps_reviews",
+  "data_id": "0x3bae11a84d4cb329:0xb1b44545b4227d0d",
+  "hl": "en",
+  "num": "20",
+  "query": "knee"
+ },
+ "search_information": {
+  "reviews_results_state": "No reviews"
+ }
+}

@@ -1,0 +1,1689 @@
+{
+ "search_metadata": {
+  "id": "6ac7faea412f4361d0635758",
+  "status": "Success",
+  "json_endpoint": "https://serpapi.com/searches/YJ8b_p8V9pE9C5VB2rKDfpYo6S0uRchgvY2EMkc0PSM/6ac7faea412f4361d0635758.json",
+  "markdown_endpoint": "https://serpapi.com/searches/YJ8b_p8V9pE9C5VB2rKDfpYo6S0uRchgvY2EMkc0PSM/6ac7faea412f4361d0635758.md",
+  "created_at": "2026-10-08 20:19:54 UTC",
+  "processed_at": "2026-10-08 20:19:54 UTC",
+  "google_maps_url": "https://www.google.com/maps/search/knee+replacement+hospital+in+Whitefield+Bengaluru/@12.9698,77.7500,13z/data=!3m1!4b1!4m2!2m1!6e5?hl=en&gl=in",
+  "raw_html_file": "https://serpapi.com/searches/YJ8b_p8V9pE9C5VB2rKDfpYo6S0uRchgvY2EMkc0PSM/6ac7faea412f4361d0635758.html",
+  "prettify_html_file": "https://serpapi.com/searches/YJ8b_p8V9pE9C5VB2rKDfpYo6S0uRchgvY2EMkc0PSM/6ac7faea412f4361d0635758.prettify",
+  "total_time_taken": 0.83
+ },
+ "search_parameters": {
+  "engine": "google_maps",
+  "type": "search",
+  "q": "knee replacement hospital in Whitefield Bengaluru",
+  "ll": "@12.9698,77.7500,13z",
+  "google_domain": "google.com",
+  "hl": "en",
+  "gl": "in"
+ },
+ "search_information": {
+  "local_results_state": "Results for exact spelling",
+  "query_displayed": "knee replacement hospital in Whitefield Bengaluru"
+ },
+ "local_results": [
+  {
+   "position": 1,
+   "title": "Manipal Hospital Whitefield",
+   "place_id": "ChIJocj7BfwRrjsRZhaB8omuyNQ",
+   "data_id": "0x3bae11fc05fbc8a1:0xd4c8ae89f2811666",
+   "data_cid": "15332696838885152358",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae11fc05fbc8a1%3A0xd4c8ae89f2811666&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae11fc05fbc8a1%3A0xd4c8ae89f2811666&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.988055399999999,
+    "longitude": 77.72877439999999
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJocj7BfwRrjsRZhaB8omuyNQ",
+   "provider_id": "/g/11bzsghy7z",
+   "rating": 4.7,
+   "reviews": 37221,
+   "type": "Private hospital",
+   "types": [
+    "Private hospital",
+    "Fertility clinic",
+    "Orthopedic clinic",
+    "Orthopedic surgeon",
+    "Pain control clinic"
+   ],
+   "type_id": "private_hospital",
+   "type_ids": [
+    "private_hospital",
+    "fertility_clinic",
+    "orthopedic_clinic",
+    "orthopedic_surgeon",
+    "pain_control_clinic"
+   ],
+   "address": "ITPL Main Rd, opposite PRESTIGE SHANTINIKETAN, KIADB Export Promotion Industrial Area, Whitefield, Bengaluru, Karnataka 560066",
+   "country": "India",
+   "open_state": "Open 24 hours",
+   "hours": "Open 24 hours",
+   "operating_hours": {
+    "friday": "Open 24 hours",
+    "saturday": "Open 24 hours",
+    "sunday": "Open 24 hours",
+    "monday": "Open 24 hours",
+    "tuesday": "Open 24 hours",
+    "wednesday": "Open 24 hours",
+    "thursday": "Open 24 hours"
+   },
+   "phone": "1800 102 4647",
+   "website": "https://www.manipalhospitals.com/whitefield/?utm_source=Organic&utm_medium=GMB&utm_campaign=website-click",
+   "extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible seating",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "offerings": [
+      "Medication disposal"
+     ]
+    },
+    {
+     "amenities": [
+      "Gender-neutral toilets"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "user_review": "\"Visited manipal Hospital Whitefield for knee replacement surgery.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmoMAewFl3HmtCl-L7Wr6g5_urB4FM0hA3OW7J4V_8lcBauzD55mdlqQUTE_MhUH-KVdS8c3SV2jC0ICwFpZdDumF52M59vPaWK8aEWOjVc8-kh4jnkkjOsmyX0cbFSLm8EwnM=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/GBIqJHicHcRdboIwAADgE1Wq0NmZ7AGRhqkNOpSavRBWCA30h9Ei0QN6B29j4vfwPR_Cud6uPE8Kf9YY08h6tPXAjXa1djNulNf0FnALrBcmP4cTU4aG9USknygXSbBfsuGjQcU4rANCoQj9lC23QV5gydfleN8gpCr5fzyf4oKKcwJ2eZVh7mf5oo3gdzSR_rfajIqgBUWf10PJdriMWdrmHINOBK3uuja16naB_I9ke4XjSdOvaQ4hBOI9B_oFirdC8w"
+  },
+  {
+   "position": 2,
+   "title": "Aster Orthopaedics, Sports & Rehab Centre - Top Orthopedic & Joint Replacement Hospital in Whitefield",
+   "place_id": "ChIJl5bwmNsRrjsRWXt1YbQ56Z0",
+   "data_id": "0x3bae11db98f09697:0x9de939b461757b59",
+   "data_cid": "11378689380420254553",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae11db98f09697%3A0x9de939b461757b59&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae11db98f09697%3A0x9de939b461757b59&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9898099,
+    "longitude": 77.7340109
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJl5bwmNsRrjsRWXt1YbQ56Z0",
+   "provider_id": "/g/11mltvncgk",
+   "rating": 2.3,
+   "reviews": 6,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Doctor",
+    "Orthopedic clinic",
+    "Orthotics & Prosthetics Centre",
+    "Pediatric orthopedic surgeon",
+    "Sports medicine clinic",
+    "Sports medicine physician",
+    "Surgeon"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon",
+    "doctor",
+    "orthopedic_clinic",
+    "orthotics_and_prosthetics_service",
+    "pediatric_orthopedic_surgeon",
+    "sports_medicine_clinic",
+    "sports_medicine_physician",
+    "surgeon"
+   ],
+   "address": "Main Road, off Whitefield, Sadara Mangala Industrial Area, Kadugodi, Bengaluru, Karnataka 560048",
+   "country": "India",
+   "open_state": "Open 24 hours",
+   "hours": "Open 24 hours",
+   "operating_hours": {
+    "friday": "Open 24 hours",
+    "saturday": "Open 24 hours",
+    "sunday": "Open 24 hours",
+    "monday": "Open 24 hours",
+    "tuesday": "Open 24 hours",
+    "wednesday": "Open 24 hours",
+    "thursday": "Open 24 hours"
+   },
+   "phone": "079 4281 0843",
+   "website": "https://www.asterhospitals.in/hospitals/aster-whitefield-bangalore",
+   "extensions": [
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    }
+   ],
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm3RvyO-zbI0AKGEpmX754T-Ki1XZ_tBvboWTfbH6wUsyL_IZ_VLbFaC83ZxuC7Ai9Z7n4oB9e7-D8you4RY3c44Esl9aTnrbt61D708Di5dJrokdFZn95ngxylhlPSj-F8yKZlUvXbTOww=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/5ZI8a3icHcTBboIwAADQL6qUUCws2QFF1GGiwTpZL8RWBLbSElrA-pM7-zcmvsN7_tfGdPrDcUTtzSqlKlEOuuy5kqaUZsZV61SdBlwD7USb7EDOrZeNdg8ebAujdL3q2hz7iIC0cXNamMXI1Jnc2GY-nbTdFVtafO9YclkGHr0PSxw1IcUSqUVYYhAHVg0o-_E4QistwguRPTNzN8YwiBv_-tWrv2tCZejL6m5FLQ7HX5AENqXiNOaM7Kfpc3IhhKB-z4F8ASRtRpI"
+  },
+  {
+   "position": 3,
+   "title": "DR.HARSHA.GN",
+   "place_id": "ChIJVfYG0NwVrjsRm-Ij2VQDVAw",
+   "data_id": "0x3bae15dcd006f655:0xc540354d923e29b",
+   "data_cid": "888338689453974171",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae15dcd006f655%3A0xc540354d923e29b&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae15dcd006f655%3A0xc540354d923e29b&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.989547499999999,
+    "longitude": 77.7336753
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJVfYG0NwVrjsRm-Ij2VQDVAw",
+   "provider_id": "/g/11nnvrpllq",
+   "rating": 4.9,
+   "reviews": 89,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon"
+   ],
+   "address": "3,4, ASTER WHITEFIELD HOSPITAL, Plot No 2, off ITPL Main Road, Sadara Mangala Industrial Area, Whitefield, Bengaluru, Karnataka 560048",
+   "country": "India",
+   "open_state": "Closed · Opens 9 am",
+   "hours": "Closed · Opens 9 am",
+   "operating_hours": {
+    "friday": "9 am–6 pm",
+    "saturday": "9 am–6 pm",
+    "sunday": "Closed",
+    "monday": "9 am–6 pm",
+    "tuesday": "9 am–6 pm",
+    "wednesday": "9 am–6 pm",
+    "thursday": "9 am–6 pm"
+   },
+   "phone": "096205 67626",
+   "website": "https://www.drharshagn.com/",
+   "extensions": [
+    {
+     "accessibility": [
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Gender-neutral toilets",
+      "Restroom"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Debit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    }
+   ],
+   "user_review": "\"Highly recommend Dr. Harsha for robotic knee replacement surgery.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnTyo5u-ADTWylBvTJ60tK2rVwnYg3mlnID_PNvRfT-RCHl-cyeupV8iVh8RjAVppD8r-4iBlLqxOS_5KjtvHQf6-o0Eg3m3lP2EK6xW_p3BQyPfZO5fE-CdBKJ39zoNXWpzZJCKEV-SMug=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/U_9g23icHcvPboIwHADgJ_pJtYOwJTvwL2HUKWJTnBcOHRRNbTtaUHzJnfc2M16-2_f32ztn7JvnyR4vhNZCtqNtB66Va5VbcH3xhLHALVgvyquS1orO2h8hSmk9y3iiRYAcWQ3sqr4Evkj1kTblZqo6ClWSS-BzOxoWnlgfVueIGZOGA7ycYrn-uW33jU_Obsp3XQAaZY-PZbnKSHCrG4Pj3Vx2x63fZZB8x6TAr3e9OdTmfiwSkjHYf47i_bpECEH_lIP6B5VURqA"
+  },
+  {
+   "position": 4,
+   "title": "Medicover Hospitals",
+   "place_id": "ChIJjRQvvRENrjsRK8Tnr_yDq4c",
+   "data_id": "0x3bae0d11bd2f148d:0x87ab83fcafe7c42b",
+   "data_cid": "9776052537443992619",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae0d11bd2f148d%3A0x87ab83fcafe7c42b&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae0d11bd2f148d%3A0x87ab83fcafe7c42b&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9908755,
+    "longitude": 77.7231609
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJjRQvvRENrjsRK8Tnr_yDq4c",
+   "provider_id": "/g/11j154ss17",
+   "rating": 5,
+   "reviews": 410,
+   "unclaimed_listing": true,
+   "type": "Orthopedic clinic",
+   "types": [
+    "Orthopedic clinic"
+   ],
+   "type_id": "orthopedic_clinic",
+   "type_ids": [
+    "orthopedic_clinic"
+   ],
+   "address": "XPRF+973, Medicover Hospital, ITPL main road, Hoodi village, opposite Hotel Zuri, Whitefield, Bengaluru, Karnataka 560048",
+   "country": "India",
+   "open_state": "Closed · Opens 10 am",
+   "hours": "Closed · Opens 10 am",
+   "operating_hours": {
+    "friday": "10 am–4 pm",
+    "saturday": "10 am–2 pm",
+    "sunday": "Closed",
+    "monday": "10 am–4 pm",
+    "tuesday": "10 am–4 pm",
+    "wednesday": "10 am–4 pm",
+    "thursday": "10 am–4 pm"
+   },
+   "phone": "080883 25726",
+   "website": "http://www.medicoverhospitals.in/",
+   "extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible seating",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Gender-neutral toilets",
+      "Restroom"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "children": [
+      "Nursing room"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "user_review": "\"We are very happy  with the knee replacement surgery that was done by him.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmy90F985-rXqpvjOCQajvv9lj6311FiJkCo4Mshl2F0urwUq4FnlurvvK8HgdWH0cZHZIsYzLOYAEUx_dKPh10aQtjDvsRS2W3Zz6rqBrw0tSyrzdK6Pzt0vQekw7N4zsY3uQ6K_INNTrT=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/FBeeAXicHcTRboIwFADQL6pchDFZsgfnRlAcgmIYvBhTCB1WCr2lzP6kz_6Nyc7DedyZUj2-WRZnzqwRouH1iLWkolN1p2ZUXK2mR0KRoLUM90mWX28-BP7ihcifodftbpWeW6193nqObQe_m8tKuN_I-DyAUU7HwQ06Pkqto0XYVHkItAzLNRZmuyuWX8e_UxUlzIZzqtpPjfvDPHdK48nhQ06gDjdpqshLjAKd1pfpNXYNFs6YetFpHceZzN4nGwAI-5-S7gnDFUgn"
+  },
+  {
+   "position": 5,
+   "title": "Dr. Karan Kukreja | Best Orthopaedic surgeon in Whitefield | Manipal Hospital Whitefield",
+   "place_id": "ChIJQVXw4dgRrjsR6GOCUWkb1hQ",
+   "data_id": "0x3bae11d8e1f05541:0x14d61b69518263e8",
+   "data_cid": "1501417664927654888",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae11d8e1f05541%3A0x14d61b69518263e8&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae11d8e1f05541%3A0x14d61b69518263e8&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.987960099999999,
+    "longitude": 77.7287553
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJQVXw4dgRrjsR6GOCUWkb1hQ",
+   "provider_id": "/g/11k_4_pkk7",
+   "rating": 4.1,
+   "reviews": 36,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Doctor",
+    "Private hospital",
+    "Specialized hospital"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon",
+    "doctor",
+    "private_hospital",
+    "specialized_hospital"
+   ],
+   "address": "Room no.29,Ground Floor, Manipal Hospitals Whitefield KR Puram Hobli, Off Hoodi Village, EPIP, Industrial Area, Whitefield, Bengaluru, Karnataka 560066",
+   "country": "India",
+   "open_state": "Closed · Opens 9 am",
+   "hours": "Closed · Opens 9 am",
+   "operating_hours": {
+    "friday": "9 am–5 pm",
+    "saturday": "9 am–5 pm",
+    "sunday": "Closed",
+    "monday": "9 am–5 pm",
+    "tuesday": "9 am–5 pm",
+    "wednesday": "9 am–5 pm",
+    "thursday": "9 am–5 pm"
+   },
+   "phone": "1800 102 4647",
+   "website": "https://www.manipalhospitals.com/whitefield/doctors/dr-karan-kukreja-consultant-orthopaedic-surgery?utm_source=Organic&utm_medium=GMB&utm_campaign=website-click",
+   "extensions": [
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible seating",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Gender-neutral toilets",
+      "Restroom"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    }
+   ],
+   "user_review": "\"Happy with the treatment from Dr. Karan Kukreja.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn_5X7-IRA-mM7igEQ3x0RdNMW_0_lF5MKucLBKwfvu0FyAc4lFz9-oRxtcOPWaPde2KZcLRll9L_LoIctBmIEGRD2Tz4xp4ROZC7lVzuHx43vEGEmZJ9UAK1va4dj1cGAuLiUY7A=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/h-lVmHicHcRRboIwGADgE1WKlBBMfKgbIKMoNjo2Xoj5YeBSKLEtIjf0CN7GxO_hez5arQe1sizROotGykbURtVXkL2ue70A2VnNoBAopCy65dkx70v3x0Mxp6hLvUsTHJwJ82qX5iUuReimiQG2SW5_o8HhnQIR4ewjyScN-yw_Z1W9TApgXAiflUzGoDddHET8c3mcyTQQvi8-PPE9m-1EnDGIgq748k80scczqf5tiKhhl9OvR9c3G2OM2veA-hdjaUPM"
+  },
+  {
+   "position": 6,
+   "title": "Dr Kumardev Arvind Rajamanya",
+   "place_id": "ChIJo-27kAQRrjsRZrU7Cb_8cYY",
+   "data_id": "0x3bae110490bbeda3:0x8671fcbf093bb566",
+   "data_cid": "9687802170874508646",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae110490bbeda3%3A0x8671fcbf093bb566&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae110490bbeda3%3A0x8671fcbf093bb566&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 13.013021499999999,
+    "longitude": 77.7621908
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJo-27kAQRrjsRZrU7Cb_8cYY",
+   "provider_id": "/g/11jvh0mv_v",
+   "rating": 4.9,
+   "reviews": 371,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon"
+   ],
+   "address": "Apollo clinic, Dr.kumardev A Rajamanya Dr, kumardev rajamanya, Seegehalli - Kannamangala Rd, Seegehalli, Kadugodi, Bengaluru, Karnataka 560115",
+   "country": "India",
+   "open_state": "Closed · Opens 8 am",
+   "hours": "Closed · Opens 8 am",
+   "operating_hours": {
+    "friday": "8 am–8 pm",
+    "saturday": "8 am–8 pm",
+    "sunday": "Closed",
+    "monday": "8 am–8 pm",
+    "tuesday": "8 am–8 pm",
+    "wednesday": "8 am–8 pm",
+    "thursday": "8 am–8 pm"
+   },
+   "phone": "095912 34658",
+   "website": "https://www.drkumardevarvindrajamanya.com/",
+   "extensions": [
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible seating",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Restroom"
+     ]
+    },
+    {
+     "crowd": [
+      "LGBTQ+ friendly"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Debit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "parking": [
+      "On-site parking"
+     ]
+    }
+   ],
+   "user_review": "\"I strongly recommend Dr Kumardev Arvind for knee replacement for all.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnFCxgKr73-xYKmee5fiUrKFOY8lRwCflv_LPGxHcpJQK7T1cybIU38iRqH8LK_fJig5BPnhPGHPs2xtpluHaJA8fwpBQoLQnHy_OJwWUrvewt9L5xDek9u4AnLp8geh5KqTQU=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/jm00QHicHcTRroIgAADQLyLtmovaerBakbCFTtd6csUQXAQkGPSD9x_6m7vd83C-v9J769ZJomQ2E8YIxSfHR2a059rPmHkmwjrAHHBJgWraXPRhFwUelxmIV_zkPO-HdsSH8xWqOux69e4IPUbEbFnhZTNnn_upzeBQvxAkuOvLQeRbqiU9Iup-ordqQreygH2w28qQSqNPdy7DpR3fPPgVyeOeP1bTotDEQsFljl9N1W7CPE1TIP9nQP8BTGtFJg"
+  },
+  {
+   "position": 7,
+   "title": "Dr Kiran Veerendra, Orthopaedic Surgeon – Shoulder & Knee Specialist",
+   "place_id": "ChIJwyiLvWgTrjsRgQAYA7IRlaU",
+   "data_id": "0x3bae1368bd8b28c3:0xa59511b203180081",
+   "data_cid": "11931462244041752705",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae1368bd8b28c3%3A0xa59511b203180081&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae1368bd8b28c3%3A0xa59511b203180081&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9579563,
+    "longitude": 77.7458412
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJwyiLvWgTrjsRgQAYA7IRlaU",
+   "provider_id": "/g/11ycxy_wbc",
+   "rating": 5,
+   "reviews": 40,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Health consultant",
+    "Orthopedic clinic",
+    "Sports medicine clinic",
+    "Sports medicine physician"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon",
+    "health_consultant",
+    "orthopedic_clinic",
+    "sports_medicine_clinic",
+    "sports_medicine_physician"
+   ],
+   "address": "Survey No. 10P &, 12P, Whitefield Main Rd, Varthur Kodi, Palm Meadows, Ramagondanahalli, Whitefield, Bengaluru, Karnataka 560066",
+   "country": "India",
+   "open_state": "Closed · Opens 5 pm Sat",
+   "hours": "Closed · Opens 5 pm Sat",
+   "operating_hours": {
+    "friday": "Closed",
+    "saturday": "5–7 pm",
+    "sunday": "Closed",
+    "monday": "5–7 pm",
+    "tuesday": "4:30–7 pm",
+    "wednesday": "4:30–7 pm",
+    "thursday": "4:30–7 pm"
+   },
+   "website": "https://bangalorearthroscopysurgeon.com/",
+   "extensions": [
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park"
+     ]
+    },
+    {
+     "amenities": [
+      "Restroom"
+     ]
+    },
+    {
+     "crowd": [
+      "LGBTQ+ friendly"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "children": [
+      "Nursing room"
+     ]
+    },
+    {
+     "parking": [
+      "Paid parking lot"
+     ]
+    }
+   ],
+   "unsupported_extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": false
+   },
+   "user_review": "\"Dr. Kiran Veerendra did a great job with my friend’s surgery.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkJCH2QQ6JkP2L9-GjzYJv9cJbluulrDeB80WnCqsiaJXdh0522S6lkPhFTtb173wqzQZ4nunsD_685p2jJun2z64duKR1ntjiqjXiPLYFL2ghxSHeEuK2kXXetx2CirIJwiPO5lMVXlZff=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/6QFdR3icHcTdbsIgGADQJ8LST1t1yS5cnXbYZVTNRG-WiVhoGf0BVtOX3LVvY7Jzce5_0rnGPgWBluNRUdeFFt6KjtfGCeNGvP4JisYibpENFumW7g8VSVLI85hUFLI5WpfDkfzOOTlr73W3FC8zfDBJa9U3YReJI4BdrCsqV3t3Dqfjvh3y08R4Y5df8SxqoCTewBBPLn6zDY0rVVsyRbPjKoNC3napePUbqBgT7gaJ6t5Ir-hHpN8_mT5dr899iDFG8n-OzANn30d_"
+  },
+  {
+   "position": 8,
+   "title": "Dr. Sarath Chandra Poodi | Best Orthopedic Surgeon in Varthur Whitefield",
+   "place_id": "ChIJN-OcQsINrjsRvZoX63z7ZXw",
+   "data_id": "0x3bae0dc2429ce337:0x7c65fb7ceb179abd",
+   "data_cid": "8963847147289549501",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae0dc2429ce337%3A0x7c65fb7ceb179abd&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae0dc2429ce337%3A0x7c65fb7ceb179abd&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.942247,
+    "longitude": 77.74711649999999
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJN-OcQsINrjsRvZoX63z7ZXw",
+   "provider_id": "/g/11sj948qb3",
+   "rating": 4.8,
+   "reviews": 325,
+   "type": "Hospital",
+   "types": [
+    "Hospital"
+   ],
+   "type_id": "hospital",
+   "type_ids": [
+    "hospital"
+   ],
+   "address": "First Floor, GVR Square, Aria Multispeciality Clinic, 1/1A, opposite Govt PU college, Varthur, Bengaluru, Karnataka 560087",
+   "country": "India",
+   "open_state": "Closed · Opens 8 am",
+   "hours": "Closed · Opens 8 am",
+   "operating_hours": {
+    "friday": "8 am–8 pm",
+    "saturday": "8 am–10 pm",
+    "sunday": "10 am–2 pm",
+    "monday": "8 am–10 pm",
+    "tuesday": "8 am–10 pm",
+    "wednesday": "8 am–8 pm",
+    "thursday": "8 am–8 pm"
+   },
+   "phone": "090902 00600",
+   "website": "http://www.drsarathchandra.in/",
+   "extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible seating",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Gender-neutral toilets"
+     ]
+    },
+    {
+     "crowd": [
+      "LGBTQ+ friendly"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "children": [
+      "Nursing room"
+     ]
+    },
+    {
+     "parking": [
+      "On-site parking"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "user_review": "\"Dr Sarath was very helpful with my knee injury.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn5luAp9IpN3Bgrf03rx6C7pGiNOPSvMV2OmSgsOrtxAE-pP4syKFEyaP5A1HceTPgXxwRUfFtp-gk4w8X7Jll07jdzbaonb4kXETH4T0qAOGAV5ugCnF3gtViJveiwsIQ3gvuu=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/Jn6A13icHcRBcoIwFADQE0ViA9I600V0QLRTiYrIVmP8UGMSSQLYC3qG3qYzvsX7e9bOGTsNAlmTEWgNUngrWq6VE8qNuL4FYCziFtmAZltWHFQkPTUfS7MmM2gvmLTDZB6bRbPO2a77Lt_y2w5s3rqBJsiw0D6-0uRxZBEdZ1wUDKqh3-4vqTMIrmH_XsUrKXH8c_49HbU6hdcqKbKwwHeaL2gZeZirlIArm1Unmt4uNwQ67z_7McYY1a85Uv9kl0Uq"
+  },
+  {
+   "position": 9,
+   "title": "Dr.Krishna Kumar MS |Robotic Joint Replacement |Arthroscopy Sports Medicine |Orthopedic surgeon|Medicover Hospital Whitefield",
+   "place_id": "ChIJ_96uMhkRrjsR9Fc3bklTxNY",
+   "data_id": "0x3bae111932aedeff:0xd6c453496e3757f4",
+   "data_cid": "15475585794398705652",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae111932aedeff%3A0xd6c453496e3757f4&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae111932aedeff%3A0xd6c453496e3757f4&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9915311,
+    "longitude": 77.72338239999999
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJ_96uMhkRrjsR9Fc3bklTxNY",
+   "provider_id": "/g/11w3r7bs29",
+   "rating": 5,
+   "reviews": 57,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Sports medicine physician"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon",
+    "sports_medicine_physician"
+   ],
+   "address": "Medicover hospitals,351 ITPL Main Road, Whitefield Road, ITPL Main Road Hoodi Village, Krishnarajapura, Hobli, Hoodi, Bengaluru, Karnataka 560048",
+   "country": "India",
+   "open_state": "Closed · Opens 9 am",
+   "hours": "Closed · Opens 9 am",
+   "operating_hours": {
+    "friday": "9 am–5 pm",
+    "saturday": "9 am–5 pm",
+    "sunday": "Closed",
+    "monday": "9 am–5 pm",
+    "tuesday": "9 am–5 pm",
+    "wednesday": "9 am–5 pm",
+    "thursday": "9 am–5 pm"
+   },
+   "phone": "040 6833 4455",
+   "website": "https://www.medicoverhospitals.in/doctors/dr-krishna-kumar-m-s?utm_source=google&utm_medium=organic&utm_campaign=gmb-dr-krishna-kumar-m-s",
+   "extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible seating",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Gender-neutral toilets",
+      "Restroom"
+     ]
+    },
+    {
+     "crowd": [
+      "LGBTQ+ friendly"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "children": [
+      "Nursing room"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl-WtGGee4ZTqcjN8NggjA8aEqAdqLA350SWKKl6DiHaVMuN_huxRpxvt7KGmDURZyFQjptELRb2214GM4_bFTIm2IH-qrHo8BdV9Q-uTNV8AcMs7fHGuT2soSwflunKY5UeYVB=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/xZPgenicHcRdDoIgAADgE5FmVtbWA82EZroy0umLKyTMoWhAPyfsDN2mre_h-35qrXu1tCxRT0ZcSi6YUexOZadZp0dUthbvFaAKKAviZE8yATKNEGNuQQbaxF7MeQO982aA1bCDk6l9zMJQzPwbPqeRicvavJL-9dDzELX-KSnewaHp9WaXXBxn7KLILS8B2bbOFoPhjqW3rtLFARgSpx6kkZpfMTLEUfL4vArThfn0xPJ0vXqObdsG9X8Kuh8ZzkPP"
+  },
+  {
+   "position": 10,
+   "title": "Aster Hospital Whitefield Bangalore",
+   "place_id": "ChIJKbNMTagRrjsRDX0itEVFtLE",
+   "data_id": "0x3bae11a84d4cb329:0xb1b44545b4227d0d",
+   "data_cid": "12804935806198381837",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae11a84d4cb329%3A0xb1b44545b4227d0d&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae11a84d4cb329%3A0xb1b44545b4227d0d&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9894945,
+    "longitude": 77.7337373
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJKbNMTagRrjsRDX0itEVFtLE",
+   "provider_id": "/g/11t9lm3vgh",
+   "rating": 4.7,
+   "reviews": 11001,
+   "type": "Hospital",
+   "types": [
+    "Hospital",
+    "Doctor",
+    "Family practice physician",
+    "Health consultant",
+    "Neurologist",
+    "ENT Specialist",
+    "Urologist"
+   ],
+   "type_id": "hospital",
+   "type_ids": [
+    "hospital",
+    "doctor",
+    "family_practice_physician",
+    "health_consultant",
+    "neurologist",
+    "otolaryngologist",
+    "urologist"
+   ],
+   "address": "Sadaramangala, Plot No. 3 & 4, Main Road, off Whitefield, opposite ITPL Main Road, Industrial Area, Whitefield, Bengaluru, Karnataka 560048",
+   "country": "India",
+   "open_state": "Open 24 hours",
+   "hours": "Open 24 hours",
+   "operating_hours": {
+    "friday": "Open 24 hours",
+    "saturday": "Open 24 hours",
+    "sunday": "Open 24 hours",
+    "monday": "Open 24 hours",
+    "tuesday": "Open 24 hours",
+    "wednesday": "Open 24 hours",
+    "thursday": "Open 24 hours"
+   },
+   "phone": "080 4510 8888",
+   "website": "https://www.asterhospitals.in/hospitals/aster-whitefield-bangalore",
+   "extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible seating"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "parking": [
+      "Paid parking lot",
+      "Paid street parking"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "user_review": "\"Dr Harsha GN , best orthopedician\nSpecially for knee replacement surgeries\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl9clQqbUGC-6vJMhrYxhogMbHINemYuSCoAumSQgCFrgXsXmyssgCVwZFH7vrXNEqUIiPmk6jzzxLSFiAFgxHEiFTq_Jwh5yVoKYlSMFpdtvmaqlguGSb0kTks_n7NZjHQ7DM=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/EbLxkXicHcTdboIwGADQJ6qwmElcsgvCrFUHEYsOvDGjI1-RlgJf-dEH9B18G5Odi_N8SGsb_HAcJeczMAZU0WPRCVPborYzYbQDDRKBBB2fHfbJj1oKFbf5cR2QxbANZZdN0kCYs01U6KzngfF7zWMIaAcppvqGCMFpPFPmDV0ardrjptzranG936dvTkufwsRWJU3ay3aU77eT2WWKh7T5s4P-bRX0a567VVLhpfai85XF3lf4Ob65rkvk_4LULwV9Rx0"
+  },
+  {
+   "position": 11,
+   "title": "Dr. Ajay S S – Orthopaedic & Joint Replacement Specialist",
+   "place_id": "ChIJs2xs7F4PrjsRBl0cqMe2k9I",
+   "data_id": "0x3bae0f5eec6c6cb3:0xd293b6c7a81c5d06",
+   "data_cid": "15173672538176511238",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae0f5eec6c6cb3%3A0xd293b6c7a81c5d06&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae0f5eec6c6cb3%3A0xd293b6c7a81c5d06&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.976474399999999,
+    "longitude": 77.7584662
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJs2xs7F4PrjsRBl0cqMe2k9I",
+   "provider_id": "/g/11v40b62h1",
+   "rating": 5,
+   "reviews": 59,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Orthopedic clinic",
+    "Orthopedic shoe store",
+    "Pain management physician",
+    "Pediatric orthopedic surgeon"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon",
+    "orthopedic_clinic",
+    "orthopedic_shoe_store",
+    "pain_management_physician",
+    "pediatric_orthopedic_surgeon"
+   ],
+   "address": "ground floor, MR Aster, Vijayanagar, Whitefield, Bengaluru, Karnataka 560066",
+   "country": "India",
+   "open_state": "Closed · Opens 6:30 pm",
+   "hours": "Closed · Opens 6:30 pm",
+   "operating_hours": {
+    "friday": "6:30–9 pm",
+    "saturday": "5:30–7:30 pm",
+    "sunday": "Closed",
+    "monday": "6:30–9 pm",
+    "tuesday": "6:30–9 pm",
+    "wednesday": "6:30–9 pm",
+    "thursday": "6:30–9 pm"
+   },
+   "phone": "063610 21347",
+   "website": "https://elvhealthcare.co.in/doctors/dr-ajay-s-s/",
+   "extensions": [
+    {
+     "from_the_business": [
+      "Identifies as women-owned"
+     ]
+    },
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "amenities": [
+      "Gender-neutral toilets",
+      "Restroom"
+     ]
+    },
+    {
+     "crowd": [
+      "LGBTQ+ friendly"
+     ]
+    },
+    {
+     "planning": [
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "parking": [
+      "Free parking garage",
+      "Free street parking"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnLKMZeYXUzdEsNB2Vxzz2gMed7JA5csDi5XHmRPqVJXRxaO49WquO9Q9MAKiWebm8_txZn6q2KRNuCBgVwg4PPKjzZi05kIAjhn37yWBt4XcvVmBPWlDBCqhlc4Kg4xJK1xMZPWow8C62-=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/gdMy73icHcTBboIwAADQL6ogFhUTDxSXODq0ko0yLovWpsVBK7ZI5Sc9-zdL9g7v9ZTWXs3K8xo5mwitRcN7w29MK8uVnTDdeuJqADPAePE2J59UfeCs4t_l13h-MzsUFG4cA5Hx8yKNQ2Y2dVhu25x0RVrm7riHEe36fXSIshjXlJ_a5Y91lZp3Ac53fYJEMQhICL6MVe2Hv-_xRarZ4kGRhSW7Fy0itNmgpJMNg1hAl-KpyypC9bBM5gFYD1Pf94H8nwH1B63VRwQ"
+  },
+  {
+   "position": 12,
+   "title": "PVR POLYCLINIC ( ortho & maternity )",
+   "place_id": "ChIJ1ZRzZpcRrjsRRAE42yX21_s",
+   "data_id": "0x3bae1197667394d5:0xfbd7f625db380144",
+   "data_cid": "18147243865964806468",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae1197667394d5%3A0xfbd7f625db380144&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae1197667394d5%3A0xfbd7f625db380144&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.980158,
+    "longitude": 77.7335143
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJ1ZRzZpcRrjsRRAE42yX21_s",
+   "provider_id": "/g/11l79cvf8y",
+   "rating": 4.9,
+   "reviews": 165,
+   "type": "Fertility clinic",
+   "types": [
+    "Fertility clinic"
+   ],
+   "type_id": "fertility_clinic",
+   "type_ids": [
+    "fertility_clinic"
+   ],
+   "address": "opposite SNS LUXURY HOMES, Pattandur Agrahara, Whitefield, Bengaluru, Karnataka 560066",
+   "country": "India",
+   "open_state": "Closed · Opens 9 am",
+   "hours": "Closed · Opens 9 am",
+   "operating_hours": {
+    "friday": "9 am–2 pm, 4–9 pm",
+    "saturday": "9 am–2 pm, 4–9 pm",
+    "sunday": "10 am–1 pm",
+    "monday": "9 am–2 pm, 4–9 pm",
+    "tuesday": "9 am–2 pm, 4–9 pm",
+    "wednesday": "9 am–2 pm, 4–9 pm",
+    "thursday": "9 am–2 pm, 4–9 pm"
+   },
+   "phone": "086397 39390",
+   "website": "https://www.pvrorthomaternity.com/",
+   "extensions": [
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Restroom"
+     ]
+    },
+    {
+     "crowd": [
+      "LGBTQ+ friendly"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "parking": [
+      "Free parking lot",
+      "Free street parking"
+     ]
+    }
+   ],
+   "unsupported_extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": false
+   },
+   "user_review": "\"The surgery went smoothly, and my recovery has been better than I expected.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlnsSdsqbM3BCNYyP2XVIxifsv1EjIDF-6ESVClq_K06YwbAQiXLSnrgMUsQbHBX57Q-Ecgl0lvIIVRLea7Lxejo-O4G5tQ-CW3sr9Pz3kpOJMzvytH3I7_81fJIGc57jvCpMQ=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/6dvu-HicHcRBcoIwFADQE0VCU6Q640KRSixUIi3iypE0BmmaID8iekDv4G2c6Vu8x72ytoGx46iKDKQxUokziJYbbYW2A27-HNkA4oDAmUbr9GujNGQ_cCoTMgs-t9f0pchpfzxA54Y1nb-jYZjlgTrtPvBweymn7FjEmW5l8g2sjGaF5zMUcqmw6ijN17HY-3EvaoNWrwvPMhRsCLSj9EZ-m9UyuXVXGxHq797cw5IuuOfXXdAkbHJxMcao-p8j_QTxbUNf"
+  },
+  {
+   "position": 13,
+   "title": "Dr. Bharat P Sarkar | Best Spine, Back & Neck Pain Surgeon in Whitefield | Manipal Hospitals Whitefield",
+   "place_id": "ChIJE9UyTJwRrjsRJm0u8O2nWoQ",
+   "data_id": "0x3bae119c4c32d513:0x845aa7edf02e6d26",
+   "data_cid": "9537119801289108774",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae119c4c32d513%3A0x845aa7edf02e6d26&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae119c4c32d513%3A0x845aa7edf02e6d26&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9881221,
+    "longitude": 77.728534
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJE9UyTJwRrjsRJm0u8O2nWoQ",
+   "provider_id": "/g/11k7cz4q80",
+   "rating": 4.9,
+   "reviews": 725,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Doctor",
+    "Private hospital",
+    "Specialized hospital"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon",
+    "doctor",
+    "private_hospital",
+    "specialized_hospital"
+   ],
+   "address": "Manipal hospital Whitefield KR Puram Hobli, Off Hoodi Village, EPIP, Industrial Area, Whitefield, Bengaluru, Karnataka 560066",
+   "country": "India",
+   "open_state": "Closed · Opens 9 am",
+   "hours": "Closed · Opens 9 am",
+   "operating_hours": {
+    "friday": "9 am–5 pm",
+    "saturday": "9 am–5 pm",
+    "sunday": "Closed",
+    "monday": "9 am–5 pm",
+    "tuesday": "9 am–5 pm",
+    "wednesday": "9 am–5 pm",
+    "thursday": "9 am–5 pm"
+   },
+   "phone": "1800 102 4647",
+   "website": "https://www.manipalhospitals.com/whitefield/doctors/dr-bharat-p-sarkar-consultant-spine-surgery-back-and-neck-pain?utm_source=Organic&utm_medium=GMB&utm_campaign=website-click",
+   "extensions": [
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible seating",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Gender-neutral toilets",
+      "Restroom"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    }
+   ],
+   "user_review": "\"Also surgery was done at reasonable cost at Hospital like manipal\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlRyTsqlXvD3o3AtBZZozQ5KsD6Bp84mD7KCbyfZMKcNuGNW03qHyC-Od5uOIfL_Dy_Xsfs3gxs4mdl8ufoGBnomSsN39r5WfzMqugg92KxerAtXhegtmUyXQm9pN3F3plCy-6E=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/SVw_Z3icHcRJDoIwFADQE1XQioqJCwanoDgHwsbE2pZFSwu_VesFPYO3MfEt3vdTG6Nh6nmixj2uFBfUAu2IagxtTI8o6XENiAACL1od9-dCHN0ZWlE-UqxwZOKqUu9DkEE6ivVkKNNxltwcq7YZye0yL3zcrlyCdvfA7tZsc03dtQQGmL9gKO9iYplaxo2SJ8hx2AUFe29by3k4yF60i0xZU27kxZUHGeocL7AWiUOj-ezZ930f1f8Jan6pRkWs"
+  },
+  {
+   "position": 14,
+   "title": "Svastha Hospital",
+   "place_id": "ChIJ9WAztx0RrjsRpQ7CP91EnlU",
+   "data_id": "0x3bae111db73360f5:0x559e44dd3fc20ea5",
+   "data_cid": "6169444256592301733",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae111db73360f5%3A0x559e44dd3fc20ea5&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae111db73360f5%3A0x559e44dd3fc20ea5&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9660082,
+    "longitude": 77.7492376
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJ9WAztx0RrjsRpQ7CP91EnlU",
+   "provider_id": "/g/11cm02t64p",
+   "rating": 3.8,
+   "reviews": 2435,
+   "type": "Hospital",
+   "types": [
+    "Hospital"
+   ],
+   "type_id": "hospital",
+   "type_ids": [
+    "hospital"
+   ],
+   "address": "Site Number 3, Main Road, Narayanappa Garden, Whitefield, Bengaluru, Karnataka 560066",
+   "country": "India",
+   "open_state": "Open 24 hours",
+   "hours": "Open 24 hours",
+   "operating_hours": {
+    "friday": "Open 24 hours",
+    "saturday": "Open 24 hours",
+    "sunday": "Open 24 hours",
+    "monday": "Open 24 hours",
+    "tuesday": "Open 24 hours",
+    "wednesday": "Open 24 hours",
+    "thursday": "Open 24 hours"
+   },
+   "phone": "080953 70000",
+   "website": "https://www.svasthahospital.com/",
+   "extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "parking": [
+      "Paid parking lot",
+      "Paid street parking"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "book_online": "https://book.healthplix.com/dr-dr-sandeep-s-physician-and-diabetologist-bangalore-division-bangalore-division?utm_source=gmb_cta&rwg_token=AE37R_g8owx5xJO0MtxJkpiVvDWkn2efv3UoRonmfsjjfjxPPfXIkD3djGoAjx56sxrm6YDnSpY5diLDjkt3CVoHEKtCamjVZQ%3D%3D",
+   "user_review": "\"Highly recommend Dr Pavan for knee replacement surgery.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnEyfA7bl1iTp0XPniwhqLo5mvWW6bz_3lkRnii-6zqcwZFjV3Y1ZxMRg35eBOOm-2v_61uiofTpKLMrxjcoDSKP1VLGYNCHYdiokQYoPUJEzG9SwUG05BtUCeqF-Nsk76_Cco8og=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/KsHnM3icHcTdEoFAGADQJ1rtasrPjAtChpCU5KYZa22r2q_sEr2hR_A2ZpyL8_1kWldqaBhFZnY4AC_YQ7E7BamZ1B0KpcErhahCyhgvAj-M5ex9HffOBRFhhY--FE1We2CVzzi2z21qFnkghUB2W9PmNL8dzIScXuuAmxabbLcl6j5TmzwEXMNq5a3vrxuF6X7lk4PnJhtnkVwE5LsE_Gg5a93BvolcbE105LB6jjYq79mpQ6EPfNQQjDHK_lMkf0MMRbY"
+  },
+  {
+   "position": 15,
+   "title": "Dr Ramachandran - Spine, Spinal Neuro, and Scoliosis surgeon",
+   "place_id": "ChIJURdg4r4XrjsRCcEzj551Bk0",
+   "data_id": "0x3bae17bee2601751:0x4d06759e8f33c109",
+   "data_cid": "5550252914648531209",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae17bee2601751%3A0x4d06759e8f33c109&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae17bee2601751%3A0x4d06759e8f33c109&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9886354,
+    "longitude": 77.7339228
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJURdg4r4XrjsRCcEzj551Bk0",
+   "provider_id": "/g/11j8vph0pd",
+   "rating": 4.9,
+   "reviews": 100,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Neurosurgeon",
+    "Spine surgeon"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon",
+    "neurosurgeon",
+    "spine_surgeon"
+   ],
+   "address": "Block B, Aster Whitefield Hospital Plot, 3 & 4, Sadaramangala Rd, opposite ITPL, Industrial Area, Whitefield, Bengaluru, Karnataka 560048",
+   "country": "India",
+   "open_state": "Closed · Opens 8 am",
+   "hours": "Closed · Opens 8 am",
+   "operating_hours": {
+    "friday": "8 am–5 pm",
+    "saturday": "8 am–5 pm",
+    "sunday": "Closed",
+    "monday": "8 am–5 pm",
+    "tuesday": "8 am–5 pm",
+    "wednesday": "8 am–5 pm",
+    "thursday": "8 am–5 pm"
+   },
+   "phone": "099022 90933",
+   "website": "http://www.spinedrx.com/",
+   "extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Restroom"
+     ]
+    },
+    {
+     "crowd": [
+      "LGBTQ+ friendly"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "children": [
+      "Nursing room"
+     ]
+    },
+    {
+     "parking": [
+      "Free street parking",
+      "On-site parking",
+      "Paid parking garage",
+      "Paid parking lot"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "user_review": "\"The surgery was about 3 hrs and my pain got reduced like magic.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmeLQiBTveYPP2sRXcQauKnGzbidQsLsWUtGsbxPXUKrtMrDpxcv3xrAPq2w33ahn6nyaWNWE-xpH-arlILOtZQajnvoqwarpkYWahtLCjDc6hnT8YJDp8bsGI22CSSiz9sMxwPxQ=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/sPO83HicHcTdzsEwGADgK6rNlgiS7wCT-Rlfy6TmrKtmHdNW39rKHboEdyPxHDyft3TOwDgIGhn3Kq2rRjxAWK6VE8r1uL4FlQHEAUEwWexwTm8iI_U0b0WBcQS7IyfssVbpq6zPBDKgB5dC6fHxsLZuYxPjeRt7O8H3qItjJtVAPRnd0jnyZoGYbZbZvzsRdlGtvnfMmmtBmXTZ7JLwgVT5sFglZlhCuoyi2X5fv0aw8R325K_rh2GI5G-O1Bf_o0g5"
+  },
+  {
+   "position": 16,
+   "title": "Manipal Hospital Varthur Road",
+   "place_id": "ChIJSxo6HfYNrjsRu4rk-Jxt-CQ",
+   "data_id": "0x3bae0df61d3a1a4b:0x24f86d9cf8e48abb",
+   "data_cid": "2663999700547701435",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae0df61d3a1a4b%3A0x24f86d9cf8e48abb&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae0df61d3a1a4b%3A0x24f86d9cf8e48abb&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9581418,
+    "longitude": 77.7455758
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJSxo6HfYNrjsRu4rk-Jxt-CQ",
+   "provider_id": "/g/1q6h_ysgm",
+   "rating": 4.7,
+   "reviews": 25652,
+   "type": "Private hospital",
+   "types": [
+    "Private hospital"
+   ],
+   "type_id": "private_hospital",
+   "type_ids": [
+    "private_hospital"
+   ],
+   "address": "Survey No. 10P &, 12P, Whitefield Main Rd, Varthur Kodi, Palm Meadows, Ramagondanahalli, Whitefield, Bengaluru, Karnataka 560066",
+   "country": "India",
+   "open_state": "Open 24 hours",
+   "hours": "Open 24 hours",
+   "operating_hours": {
+    "friday": "Open 24 hours",
+    "saturday": "Open 24 hours",
+    "sunday": "Open 24 hours",
+    "monday": "Open 24 hours",
+    "tuesday": "Open 24 hours",
+    "wednesday": "Open 24 hours",
+    "thursday": "Open 24 hours"
+   },
+   "phone": "1800 102 4647",
+   "website": "https://www.manipalhospitals.com/varthurroad/?utm_source=GMB&utm_medium=",
+   "extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible seating"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "parking": [
+      "Paid parking lot",
+      "Paid street parking"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "user_review": "\"My wife got knee replacement surgery under dr Shivkumar.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnKmazNF96C9ts7-x8s76xxIfmC5NZAbLIhyZOPzPxZ53bx3R7IgSEBdfW27-6JWqXdkiVqJSiDg4IDsyVnCCGKtDFdpRl9fpoCWzUj3Vj0W9pbYtUN3ReOQXuEKPEFF2nrpPshow=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/VUNbG3icHcRNcoIwGADQE0XQKEhnurABKtLBFCtRduUvUSGJfnGM3LBH6G0607d4vz_CGA0vjtMLPOFK8b69Q3urlTStNJNaDQ7XgGpA4KzWOf1iMh2-xywOPBIY8JFdgu9Zm3QDWWTlqvpIxLPc0pHacoEri3M_4bvorenYzEfehl0PzeVUXDe7U8jnSQjPQhLynpowbnTeB51WhI37My7OLgt0dTT7DOft9vNwj1IaxfFM3jQFoR6vj6nrukj8XyP5B7IIRRw"
+  },
+  {
+   "position": 17,
+   "title": "Dr. D. Harikishore Reddy | Best Orthopedic surgeon in Whitefield | Manipal Hospital Whitefield",
+   "place_id": "ChIJI4Vh8Z8RrjsRsfm9ikdiqwk",
+   "data_id": "0x3bae119ff1618523:0x9ab62478abdf9b1",
+   "data_cid": "696758626768779697",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae119ff1618523%3A0x9ab62478abdf9b1&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae119ff1618523%3A0x9ab62478abdf9b1&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.988046599999999,
+    "longitude": 77.72872919999999
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJI4Vh8Z8RrjsRsfm9ikdiqwk",
+   "provider_id": "/g/11y4926_w3",
+   "rating": 5,
+   "reviews": 32,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon"
+   ],
+   "address": "Ground Floor, Manipal Hospital Whitefield #143, 212-215, EPIP, Hobli, Industrial Area, Hoodi Village, Krishnarajapuram, Bengaluru, Karnataka 560066",
+   "country": "India",
+   "open_state": "Closed · Opens 9 am",
+   "hours": "Closed · Opens 9 am",
+   "operating_hours": {
+    "friday": "9 am–5 pm",
+    "saturday": "9 am–5 pm",
+    "sunday": "Closed",
+    "monday": "9 am–5 pm",
+    "tuesday": "9 am–5 pm",
+    "wednesday": "9 am–5 pm",
+    "thursday": "9 am–5 pm"
+   },
+   "phone": "1800 102 4647",
+   "website": "https://www.manipalhospitals.com/whitefield/doctors/dr-d-hari-kishore-reddy-consultant-orthopedics/?utm_source=Organic&utm_medium=GMB&utm_campaign=website-click",
+   "extensions": [
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible seating",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Restroom"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    }
+   ],
+   "user_review": "\"Long term recovery explanation is done properly.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWlU4G4TjxmgnMX0bVMaMLLUCgmqHYQdRsCZ4nsQHWeR_h8dQ-0XVdermUxZg_-Al0PFRotdv5pZBpfjcjfaUzyYhQc0EfyU0UHXTpJ10fUn4JVXFfxWlklxlz_UVaR6V6KoV7RQ=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/-C3Xn3icHcTbTsIwGADgJyr7iROJiRdAxAVYQpu1G7tZZtdDRk_QqoM39BF8GxK_i-_vV6cU4muWGf00U94rI76iuHLvknBpxr3NVIiIRxSzVUGOVW1rQ_OPvBonq1zZwCcr-_JwoBtlL8UJDyRu2txFXNSCdHo5YAQNG8TV0qlVHVoZOG6JT8P3c2jXQY58lD29304ac3iXNwq0aKqwm4OkLt-xZiun2pzNZO4dZT1ZsMXesxeC337mAID0_xy5B0gURmc"
+  },
+  {
+   "position": 18,
+   "title": "Sathya Sai Orthopaedic & Multispeciality Hospital",
+   "place_id": "ChIJBzg6u00QrjsR0ZZWJiHqmgM",
+   "data_id": "0x3bae104dbb3a3807:0x39aea21265696d1",
+   "data_cid": "259777356625254097",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae104dbb3a3807%3A0x39aea21265696d1&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae104dbb3a3807%3A0x39aea21265696d1&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 13.0215649,
+    "longitude": 77.71286169999999
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJBzg6u00QrjsR0ZZWJiHqmgM",
+   "provider_id": "/g/1tdcdt3_",
+   "rating": 4.7,
+   "reviews": 5800,
+   "type": "Hospital",
+   "types": [
+    "Hospital",
+    "Doctor"
+   ],
+   "type_id": "hospital",
+   "type_ids": [
+    "hospital",
+    "doctor"
+   ],
+   "address": "Old Madras Rd, next to RTO, Banashankari Layout, Bhattarahalli, Hosabasavanapura, Krishnarajapuram, Bengaluru, Karnataka 560049",
+   "country": "India",
+   "open_state": "Open 24 hours",
+   "hours": "Open 24 hours",
+   "operating_hours": {
+    "friday": "Open 24 hours",
+    "saturday": "Open 24 hours",
+    "sunday": "Open 24 hours",
+    "monday": "Open 24 hours",
+    "tuesday": "Open 24 hours",
+    "wednesday": "Open 24 hours",
+    "thursday": "Open 24 hours"
+   },
+   "phone": "070226 49111",
+   "website": "http://sathyasaihospital.com/",
+   "extensions": [
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance"
+     ]
+    },
+    {
+     "offerings": [
+      "Medication disposal"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    },
+    {
+     "parking": [
+      "Paid parking lot"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "user_review": "\"My wife came here for knee replacement surgery which was done successfully.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkg1c12kjyZ4wjai-W-gFZVqb_yJvnLRT4Q5mmemVURmxx5fpICErs1pM98x055FvXycluAPKiaprMsnZl7X-8PKTvs9SoMmkuvlVroZ66I32914E54PNqwCq_kvjmG1nQNJKrv=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/KocQF3icHcRJDoIwAADAF1WoUhUTD8bghhhERMOFaINF6EYLBV7oG_yNiXOY76doGqkXlkWLyYgIQWje6lxhwZucNyMsmEWkBlgDba12URjfKgIxHFflkDpd-XiDGyCbNKmf2XAw_BjFzhkxlrPkGrG-Ry-5X3tKQxm4895GaGPuA6btKvTfD6kCzVM6u4N56MdGuxcRsKo1NFEinU73k7ELHQ854anu1nVWmZJtIT-fDr4yyw7atg2K_xjwH6qkRVE"
+  },
+  {
+   "position": 19,
+   "title": "MTB Orthopaedic Hospital",
+   "place_id": "ChIJq-gWMAsRrjsRmjCf06Jj95Y",
+   "data_id": "0x3bae110b3016e8ab:0x96f763a2d39f309a",
+   "data_cid": "10878272975922999450",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae110b3016e8ab%3A0x96f763a2d39f309a&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae110b3016e8ab%3A0x96f763a2d39f309a&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 12.9951289,
+    "longitude": 77.69540719999999
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJq-gWMAsRrjsRmjCf06Jj95Y",
+   "provider_id": "/g/11fyzcmxvf",
+   "rating": 4,
+   "reviews": 188,
+   "type": "Private hospital",
+   "types": [
+    "Private hospital"
+   ],
+   "type_id": "private_hospital",
+   "type_ids": [
+    "private_hospital"
+   ],
+   "address": "XMWW+36, Whitefield Main Rd, opposite Phoenix Market City, RHB Colony, Mahadevapura, Bengaluru, Karnataka 560048",
+   "country": "India",
+   "open_state": "Open 24 hours",
+   "hours": "Open 24 hours",
+   "operating_hours": {
+    "friday": "Open 24 hours",
+    "saturday": "Open 24 hours",
+    "sunday": "Closed",
+    "monday": "Open 24 hours",
+    "tuesday": "Open 24 hours",
+    "wednesday": "Open 24 hours",
+    "thursday": "Open 24 hours"
+   },
+   "phone": "080 4111 6777",
+   "extensions": [
+    {
+     "accessibility": [
+      "Wheelchair-accessible car park",
+      "Wheelchair-accessible entrance"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "NFC mobile payments"
+     ]
+    }
+   ],
+   "user_review": "\"Very practical n reasonable treatment!\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk3Y-spIK1mA6s84zHLj_JYc7J6MwvgFu0CwXYvV7fEnSILGZK1dk39_b4WvS9U4_phVTU1P-A-qoLN4V6P7cnuGzhzhQKCaumjApN2p0aS6U-PYX3p714PyJOu6Fxu6WFzbLFj=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/UHpovnicHcRLjoIwAADQE1VaaYqauCBGVECnI_JzQ7QiDUrbmVJQLugZvI2Jb_HeL962Ss8s687tUSVldS-NLv-ZFG0p2hGTjVUpDZgG2nLXe3pIb3YOtNoEqHGJnuBhHdaFnzPHJ9u-qzwDF32Wd4lzXYpoE66OAbrc7GlxxmkXTWNcKJ4cYkSBC_5kuMMJoQ4TZjXwgf8Gi5NpalftxgqeIhIDmme2chCmT__HEO9hSOoN59Cr5z2CEAL-nQHxAcvQQwE"
+  },
+  {
+   "position": 20,
+   "title": "TIRUMALA ORTHOPAEDIC AND PAEDIATRIC HOSPITAL",
+   "place_id": "ChIJM5vY1twRrjsRxtttrKZ2vbs",
+   "data_id": "0x3bae11dcd6d89b33:0xbbbd76a6ac6ddbc6",
+   "data_cid": "13528099313920367558",
+   "reviews_link": "https://serpapi.com/search.json?data_id=0x3bae11dcd6d89b33%3A0xbbbd76a6ac6ddbc6&engine=google_maps_reviews&hl=en",
+   "photos_link": "https://serpapi.com/search.json?data_id=0x3bae11dcd6d89b33%3A0xbbbd76a6ac6ddbc6&engine=google_maps_photos&hl=en",
+   "gps_coordinates": {
+    "latitude": 13.0105655,
+    "longitude": 77.70791559999999
+   },
+   "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJM5vY1twRrjsRxtttrKZ2vbs",
+   "provider_id": "/g/11h5l7dlnc",
+   "rating": 4.5,
+   "reviews": 891,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Gastroenterologist",
+    "Obstetrician-gynecologist",
+    "Medical Center",
+    "Orthopedic clinic",
+    "ENT Specialist",
+    "Pediatrician",
+    "Physiotherapy Center",
+    "Plastic surgeon",
+    "Urologist"
+   ],
+   "type_id": "orthopedic_surgeon",
+   "type_ids": [
+    "orthopedic_surgeon",
+    "gastroenterologist",
+    "gynecologist",
+    "medical_center",
+    "orthopedic_clinic",
+    "otolaryngologist",
+    "pediatrician",
+    "physiotherapy_center",
+    "plastic_surgeon",
+    "urologist"
+   ],
+   "address": "73,20th cross,2nd stage Gayathri layout, Basavanapura Main Rd, Krishnarajapuram, Bengaluru, Karnataka 560036",
+   "country": "India",
+   "open_state": "Open 24 hours",
+   "hours": "Open 24 hours",
+   "operating_hours": {
+    "friday": "Open 24 hours",
+    "saturday": "Open 24 hours",
+    "sunday": "Open 24 hours",
+    "monday": "Open 24 hours",
+    "tuesday": "Open 24 hours",
+    "wednesday": "Open 24 hours",
+    "thursday": "Open 24 hours"
+   },
+   "phone": "080885 85971",
+   "website": "http://www.tirumalahospitals.com/",
+   "extensions": [
+    {
+     "from_the_business": [
+      "Identifies as women-owned"
+     ]
+    },
+    {
+     "service_options": [
+      "On-site services"
+     ]
+    },
+    {
+     "accessibility": [
+      "Wheelchair-accessible entrance",
+      "Wheelchair-accessible toilet"
+     ]
+    },
+    {
+     "amenities": [
+      "Gender-neutral toilets",
+      "Restroom"
+     ]
+    },
+    {
+     "crowd": [
+      "LGBTQ+ friendly"
+     ]
+    },
+    {
+     "planning": [
+      "Appointment required",
+      "Appointments recommended"
+     ]
+    },
+    {
+     "payments": [
+      "Credit cards",
+      "Debit cards",
+      "Google Pay",
+      "NFC mobile payments"
+     ]
+    }
+   ],
+   "service_options": {
+    "on_site_services": true
+   },
+   "user_review": "\"Dr. Prabhakar V performed my knee replacement surgery with incredible skill.\"",
+   "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmEjpo8WdODP7hphIJ0FArgiV-XSfFsoP4hOp4o8Lts7sa5Jwb2vCtTITqPtrm3VIgJlU7v-8P1WX81qQ0XkNPVuvioxkeEv8nZ3-zmP1oBXyfYLzecDqVo9AUZYhH-G9DeYDnj6VIqBv1I=w1000-h1000-c-n",
+   "serpapi_thumbnail": "https://serpapi.com/images/url/NNtHwnicHcRBUsIwFADQE4UmFm1wxkWxIOkwErWkLTuNIQHa_LQJQbmka2_jjG_xfn9MCM7fJ0ln0okG0J06ezVKsEHZMJHQJ9p5JD3ySb565VXdL44OaP25KXhmnGElXuajPgjUvO2XHvjUbNwU6Dr4zL_flpePm_gYKlYNPIx9Kpguu20WEeWkbigZXnBzeubiHA_wdVKLSO0uRdeeE5g33_t2fVWyGATM8u2uNSv0NCtUW9jjnWDDPBL2cCEYY2T-l8j-AbHiR1g"
+  }
+ ],
+ "serpapi_pagination": {
+  "next": "https://serpapi.com/search.json?engine=google_maps&gl=in&google_domain=google.com&hl=en&ll=%4012.9698%2C77.7500%2C13z&q=knee+replacement+hospital+in+Whitefield+Bengaluru&start=20&type=search"
+ }
+}

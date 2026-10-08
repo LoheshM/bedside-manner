@@ -1,0 +1,28 @@
+[project]
+name = "bedside-manner"
+version = "0.1.0"
+description = "Compare hospitals by what patients of your procedure complained about (SerpApi India Hackathon 2026)"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.143.0",
+    "httpx>=0.28.1",
+    "openai>=3.26.1",
+    "pydantic>=2.14.0",
+    "python-dotenv>=1.2.4",
+    "sse-starlette>=3.5.0",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "playwright>=1.63.0",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "respx>=0.23.1",
+    "ruff>=0.16.10",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]

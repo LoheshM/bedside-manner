@@ -1,0 +1,622 @@
+[
+ {
+  "event": "start",
+  "data": {
+   "procedure": "Cataract surgery",
+   "place": "Chennai",
+   "keyword": "cataract",
+   "mode": "auto"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "find",
+   "label": "Finding hospitals for cataract surgery near Chennai",
+   "status": "running"
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps",
+   "purpose": "Hospitals for “Cataract surgery” near Chennai",
+   "params": {
+    "type": "search",
+    "q": "cataract surgery hospital in Chennai",
+    "ll": "@13.0827,80.2707,12z",
+    "hl": "en",
+    "gl": "in"
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "hospitals",
+  "data": {
+   "hospitals": [
+    {
+     "title": "Dr Agarwals Eye Hospital",
+     "data_id": "0x3a52635fa39a874f:0x54e12d6b1c19b582",
+     "place_id": "ChIJT4eao19jUjoRgrUZHGst4VQ",
+     "rating": 4.9,
+     "reviews": 11448,
+     "type": "Hospital",
+     "address": "Plot No 50, Nainiammal Street, Chennai - Thiruvallur High Rd, near Rakki Theatre, West Krishnapuram, Ambattur, Chennai, ",
+     "lat": 13.121898,
+     "lng": 80.14735399999999,
+     "km": null
+    },
+    {
+     "title": "Satish Eye Hospital",
+     "data_id": "0x3a5265d89dd59e4b:0xf18c3bf435e0e4c8",
+     "place_id": "ChIJS57VndhlUjoRyOTgNfQ7jPE",
+     "rating": 5,
+     "reviews": 3112,
+     "type": "Eye care center",
+     "address": "15, Old, 57, Ormes Rd, Kilpauk, Chennai, Tamil Nadu 600010",
+     "lat": 13.081470099999999,
+     "lng": 80.24689939999999,
+     "km": null
+    },
+    {
+     "title": "The Eye Foundation | Eye Hospital in Chennai",
+     "data_id": "0x3a5267c243e175f7:0xab24c4a87dff3705",
+     "place_id": "ChIJ93XhQ8JnUjoRBTf_fajEJKs",
+     "rating": 4.9,
+     "reviews": 2745,
+     "type": "Hospital",
+     "address": "158, Gulecha Towers, Arcot Rd, opposite to Nexus Vijaya Mall, Ottagapalayam, Somasundara Bharathi Nagar, Vadapalani, Che",
+     "lat": 13.049198599999999,
+     "lng": 80.2096292,
+     "km": null
+    }
+   ],
+   "skipped": [
+    {
+     "title": "Regional Institute of Ophthalmology and Government Ophthalmic Hospital, Chennai",
+     "why": "only 171 reviews"
+    },
+    {
+     "title": "Dr Agarwals Eye Hospital",
+     "why": "only 132 reviews"
+    },
+    {
+     "title": "Government Eye Hospital",
+     "why": "only 122 reviews"
+    },
+    {
+     "title": "Chennai Eye Care Hospital",
+     "why": "only 172 reviews"
+    },
+    {
+     "title": "Medicare Eye Hospital",
+     "why": "only 163 reviews"
+    },
+    {
+     "title": "Amalya Eye Hospital",
+     "why": "only 176 reviews"
+    },
+    {
+     "title": "Dr Agarwals Eye Hospital",
+     "why": "another branch of the same hospital group"
+    },
+    {
+     "title": "Aravind Eye Hospital - Chennai",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "An-Noor Eye Hospital",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Abate Eye Hospital Chennai",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "American Eye Care Centre",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Rajan Eye Care",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "DR PARTHASARATHY MEMORIAL EYE CARE HOSPITAL",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Udhi Eye Hospital LLP",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Dr.Ashok Eye Hospital (Unit of Centre For Eye And Health Care)",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "R.K. Eye Centre",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Sundar Eye Hospital",
+     "why": "fewer reviews than the top 3"
+    }
+   ]
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "find",
+   "label": "Comparing the 3 most-reviewed hospitals · 17 other places skipped (doctors' own listings, clinics, small places, extra branches, fewer reviews)",
+   "status": "done"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "reviews",
+   "label": "Reading reviews that mention “cataract”: lowest-rated first, and newest first",
+   "status": "running"
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Lowest-rated “cataract” reviews · Dr Agarwals Eye Hospital",
+   "params": {
+    "data_id": "0x3a52635fa39a874f:0x54e12d6b1c19b582",
+    "query": "cataract",
+    "sort_by": "ratingLow",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 1,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Newest “cataract” reviews · Dr Agarwals Eye Hospital",
+   "params": {
+    "data_id": "0x3a52635fa39a874f:0x54e12d6b1c19b582",
+    "query": "cataract",
+    "sort_by": "newestFirst",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Lowest-rated “cataract” reviews · Satish Eye Hospital",
+   "params": {
+    "data_id": "0x3a5265d89dd59e4b:0xf18c3bf435e0e4c8",
+    "query": "cataract",
+    "sort_by": "ratingLow",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Newest “cataract” reviews · Satish Eye Hospital",
+   "params": {
+    "data_id": "0x3a5265d89dd59e4b:0xf18c3bf435e0e4c8",
+    "query": "cataract",
+    "sort_by": "newestFirst",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Lowest-rated “cataract” reviews · The Eye Foundation",
+   "params": {
+    "data_id": "0x3a5267c243e175f7:0xab24c4a87dff3705",
+    "query": "cataract",
+    "sort_by": "ratingLow",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Newest “cataract” reviews · The Eye Foundation",
+   "params": {
+    "data_id": "0x3a5267c243e175f7:0xab24c4a87dff3705",
+    "query": "cataract",
+    "sort_by": "newestFirst",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "reviews",
+   "label": "Read Dr Agarwals Eye Hospital: 20 + 20 · Satish Eye Hospital: 20 + 20 · The Eye Foundation: 20 + 20",
+   "status": "done"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "label",
+   "label": "Reading what each low-rated review is about",
+   "status": "running"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "label",
+   "label": "4 low-rated reviews labelled by gemini-2.5-flash (4 labels; every count is computed by code)",
+   "status": "done"
+  }
+ },
+ {
+  "event": "result",
+  "data": {
+   "procedure": "Cataract surgery",
+   "procedure_id": "cataract",
+   "keyword": "cataract",
+   "place": "Chennai",
+   "city": "Chennai",
+   "hospitals": [
+    {
+     "title": "Dr Agarwals Eye Hospital",
+     "data_id": "0x3a52635fa39a874f:0x54e12d6b1c19b582",
+     "place_id": "ChIJT4eao19jUjoRgrUZHGst4VQ",
+     "rating": 4.9,
+     "reviews": 11448,
+     "type": "Hospital",
+     "address": "Plot No 50, Nainiammal Street, Chennai - Thiruvallur High Rd, near Rakki Theatre, West Krishnapuram, Ambattur, Chennai, ",
+     "lat": 13.121898,
+     "lng": 80.14735399999999,
+     "km": null,
+     "status": "ok",
+     "low_read": 20,
+     "complete": true,
+     "low_status": "ok",
+     "new_status": "ok",
+     "complaints": 2,
+     "complaints_recent": 1,
+     "complaints_recent_procedure": 1,
+     "newest_complaint": "2025-09-27",
+     "replied": 2,
+     "new_read": 20,
+     "new_critical": 1,
+     "low_stars_no_issue": 0,
+     "new_span": [
+      "2024-12-21",
+      "2026-08-27"
+     ],
+     "themes": {
+      "billing": 1,
+      "insurance": 0,
+      "waiting": 0,
+      "staff": 1,
+      "doctor": 0,
+      "outcome": 0,
+      "discharge": 0,
+      "hygiene": 0,
+      "emergency": 0
+     },
+     "excerpts": [
+      {
+       "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0bVYxZE9kMEpCUWpCcGNVZEJOMVJaU1hOd1owRRAB",
+       "stars": 1.0,
+       "critical": true,
+       "complaint": true,
+       "date": "2025-09-27",
+       "edited": null,
+       "recent": true,
+       "excerpt": "This is the second time I am facing this bad experience with them. My first bad experience Aa per their suggestions, I had bought a glass from them which was big in size, I went and told them regarding this they taken back the glass without doing any adjustments or anything they returned back after …",
+       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0bVYxZE9kMEpCUWpCcGNVZEJOMVJaU1hOd1owRRAB!2m1!1s0x0:0x54e12d6b1c19b582!3m1!1s2@1:CAIQACodChtycF9oOktmV1dOd0JBQjBpcUdBN1RZSXNwZ0E%7C%7C?hl=en",
+       "themes": [
+        "staff",
+        "billing"
+       ],
+       "scope": "procedure_or_admission",
+       "replied": true,
+       "label_by": "llm"
+      }
+     ]
+    },
+    {
+     "title": "Satish Eye Hospital",
+     "data_id": "0x3a5265d89dd59e4b:0xf18c3bf435e0e4c8",
+     "place_id": "ChIJS57VndhlUjoRyOTgNfQ7jPE",
+     "rating": 5,
+     "reviews": 3112,
+     "type": "Eye care center",
+     "address": "15, Old, 57, Ormes Rd, Kilpauk, Chennai, Tamil Nadu 600010",
+     "lat": 13.081470099999999,
+     "lng": 80.24689939999999,
+     "km": null,
+     "status": "ok",
+     "low_read": 20,
+     "complete": true,
+     "low_status": "ok",
+     "new_status": "ok",
+     "complaints": 1,
+     "complaints_recent": 1,
+     "complaints_recent_procedure": 1,
+     "newest_complaint": "2026-06-11",
+     "replied": 0,
+     "new_read": 20,
+     "new_critical": 1,
+     "low_stars_no_issue": 0,
+     "new_span": [
+      "2021-11-13",
+      "2026-09-23"
+     ],
+     "themes": {
+      "billing": 1,
+      "insurance": 1,
+      "waiting": 0,
+      "staff": 1,
+      "doctor": 1,
+      "outcome": 0,
+      "discharge": 0,
+      "hygiene": 0,
+      "emergency": 0
+     },
+     "excerpts": [
+      {
+       "id": "Ci9DQUlRQUNvZENodHljRjlvT21wSFdtMTVUVU5KZHpCelJrSkhTMmhKVkRKdmVFRRAB",
+       "stars": 1.0,
+       "critical": true,
+       "complaint": true,
+       "date": "2026-06-11",
+       "edited": null,
+       "recent": true,
+       "excerpt": "A very poor experience from the front desk staff & surprisingly the doctor [name] Talking to them feels like dealing with a govt bank - unnecessary and exhausting. They could not be upfront about pricing details, when asked about insurance coverage for a cataract operation, all we could get out of …",
+       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wSFdtMTVUVU5KZHpCelJrSkhTMmhKVkRKdmVFRRAB!2m1!1s0x0:0xf18c3bf435e0e4c8!3m1!1s2@1:CAIQACodChtycF9oOmpHWm15TUNJdzBzRkJHS2hJVDJveEE%7C%7C?hl=en",
+       "themes": [
+        "staff",
+        "doctor",
+        "billing",
+        "insurance"
+       ],
+       "scope": "procedure_or_admission",
+       "replied": false,
+       "label_by": "llm"
+      }
+     ]
+    },
+    {
+     "title": "The Eye Foundation | Eye Hospital in Chennai",
+     "data_id": "0x3a5267c243e175f7:0xab24c4a87dff3705",
+     "place_id": "ChIJ93XhQ8JnUjoRBTf_fajEJKs",
+     "rating": 4.9,
+     "reviews": 2745,
+     "type": "Hospital",
+     "address": "158, Gulecha Towers, Arcot Rd, opposite to Nexus Vijaya Mall, Ottagapalayam, Somasundara Bharathi Nagar, Vadapalani, Che",
+     "lat": 13.049198599999999,
+     "lng": 80.2096292,
+     "km": null,
+     "status": "ok",
+     "low_read": 20,
+     "complete": true,
+     "low_status": "ok",
+     "new_status": "ok",
+     "complaints": 0,
+     "complaints_recent": 0,
+     "complaints_recent_procedure": 0,
+     "newest_complaint": null,
+     "replied": 0,
+     "new_read": 20,
+     "new_critical": 0,
+     "low_stars_no_issue": 1,
+     "new_span": [
+      "2026-08-21",
+      "2026-09-29"
+     ],
+     "themes": {
+      "billing": 0,
+      "insurance": 0,
+      "waiting": 0,
+      "staff": 0,
+      "doctor": 0,
+      "outcome": 0,
+      "discharge": 0,
+      "hygiene": 0,
+      "emergency": 0
+     },
+     "excerpts": []
+    }
+   ],
+   "skipped": [
+    {
+     "title": "Regional Institute of Ophthalmology and Government Ophthalmic Hospital, Chennai",
+     "why": "only 171 reviews"
+    },
+    {
+     "title": "Dr Agarwals Eye Hospital",
+     "why": "only 132 reviews"
+    },
+    {
+     "title": "Government Eye Hospital",
+     "why": "only 122 reviews"
+    },
+    {
+     "title": "Chennai Eye Care Hospital",
+     "why": "only 172 reviews"
+    },
+    {
+     "title": "Medicare Eye Hospital",
+     "why": "only 163 reviews"
+    },
+    {
+     "title": "Amalya Eye Hospital",
+     "why": "only 176 reviews"
+    },
+    {
+     "title": "Dr Agarwals Eye Hospital",
+     "why": "another branch of the same hospital group"
+    },
+    {
+     "title": "Aravind Eye Hospital - Chennai",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "An-Noor Eye Hospital",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Abate Eye Hospital Chennai",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "American Eye Care Centre",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Rajan Eye Care",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "DR PARTHASARATHY MEMORIAL EYE CARE HOSPITAL",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Udhi Eye Hospital LLP",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Dr.Ashok Eye Hospital (Unit of Centre For Eye And Health Care)",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "R.K. Eye Centre",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Sundar Eye Hospital",
+     "why": "fewer reviews than the top 3"
+    }
+   ],
+   "themes": {
+    "billing": "Billing & estimates",
+    "insurance": "Insurance / cashless",
+    "waiting": "Waiting & delays",
+    "staff": "Nursing & staff behaviour",
+    "doctor": "Doctor communication",
+    "outcome": "Outcome & complications",
+    "discharge": "Admission & discharge process",
+    "hygiene": "Cleanliness",
+    "emergency": "Emergency handling"
+   },
+   "asks": [
+    {
+     "theme": "billing",
+     "label": "Billing & estimates",
+     "question": "Ask for a written, itemised cost estimate (package or not) and what it excludes — implants, medicines, consumables, extra days.",
+     "count": 2,
+     "hospitals": [
+      "Dr Agarwals Eye Hospital",
+      "Satish Eye Hospital"
+     ]
+    },
+    {
+     "theme": "staff",
+     "label": "Nursing & staff behaviour",
+     "question": "Ask about the nurse-to-patient ratio in the ward/ICU and whom to call at night if a request is ignored.",
+     "count": 2,
+     "hospitals": [
+      "Dr Agarwals Eye Hospital",
+      "Satish Eye Hospital"
+     ]
+    },
+    {
+     "theme": "insurance",
+     "label": "Insurance / cashless",
+     "question": "Get cashless pre-authorisation confirmed in writing by your insurer/TPA before admission, and ask who pays if the approval is partial.",
+     "count": 1,
+     "hospitals": [
+      "Satish Eye Hospital"
+     ]
+    },
+    {
+     "theme": "doctor",
+     "label": "Doctor communication",
+     "question": "Ask which doctor will operate and do the daily rounds, and when the family can speak to them.",
+     "count": 1,
+     "hospitals": [
+      "Satish Eye Hospital"
+     ]
+    }
+   ],
+   "label_source": "llm",
+   "label_model": "gemini-2.5-flash",
+   "recent_months": 24,
+   "as_of": "2026-10-08",
+   "credits_spent": 0,
+   "searches": 7,
+   "ms": 15
+  }
+ },
+ {
+  "event": "done",
+  "data": {
+   "credits_spent": 0,
+   "ms": 15
+  }
+ }
+]

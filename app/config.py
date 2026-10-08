@@ -24,6 +24,7 @@ class Settings:
     fixtures_dir: Path
     cache_ttl_hours: float
     live_per_hour: int
+    live_per_day: int = 60
 
     @property
     def effective_mode(self) -> str:
@@ -45,4 +46,5 @@ def load_settings() -> Settings:
         fixtures_dir=ROOT / "data" / "fixtures",
         cache_ttl_hours=float(os.getenv("BEDSIDE_CACHE_TTL_HOURS", "168")),
         live_per_hour=int(os.getenv("BEDSIDE_LIVE_PER_HOUR", "30")),
+        live_per_day=int(os.getenv("BEDSIDE_LIVE_PER_DAY", "60")),
     )

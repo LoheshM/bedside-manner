@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import re
 import time
 from collections.abc import Awaitable, Callable
 from dataclasses import dataclass
@@ -85,7 +86,7 @@ async def run(procedure_id: str, area: str, city: str, deps: Deps, emit: Emit,
         return None
 
     if proc is None:
-        await emit("error", {"text": "Pick a procedure from the list."})
+        await emit("failure", {"text": "Pick a procedure from the list."})
         return {}
     place = f"{area}, {city}" if area else city
     kw = proc.keyword
@@ -100,8 +101,8 @@ async def run(procedure_id: str, area: str, city: str, deps: Deps, emit: Emit,
     local = (maps or {}).get("local_results")
     hospitals, skipped = pick_hospitals(local if isinstance(local, list) else [], None, N_HOSPITALS)
     await emit("hospitals", {"hospitals": [h.to_dict() for h in hospitals], "skipped": skipped[:25]})
-    await step("find", f"Comparing {len(hospitals)} hospitals · skipped {len(skipped)} doctors' listings, clinics, "
-                       "small places and extra branches", "done")
+    await step("find", f"Comparing the {len(hospitals)} most-reviewed hospitals · {len(skipped)} other places skipped "
+                       "(doctors' own listings, clinics, small places, extra branches, fewer reviews)", "done")
     if not hospitals:
         await notice("No hospital with enough Google reviews was found for this search. Try a nearby area or "
                      "the city name only.")
@@ -117,36 +118,49 @@ async def run(procedure_id: str, area: str, city: str, deps: Deps, emit: Emit,
     await step("reviews", "Read " + " · ".join(f"{short(h.title)}: {len(low[i])} + {len(new[i])}"
                                                for i, h in enumerate(hospitals)), "done")
 
-    # 3. Labels for every 1–2★ review (one LLM call; keyword rules if no LLM) ------------------------
-    await step("label", "Reading what each complaint is about")
-    crit: dict[str, tuple[str, str]] = {}  # review id -> (hospital, snippet)
-    for i, h in enumerate(hospitals):
+    # 3. Labels for every 1–2★ review: one LLM call per hospital (keyword rules if no LLM) ---------------
+    await step("label", "Reading what each low-rated review is about")
+    per_hosp: list[dict[str, str]] = []  # per hospital: review id -> snippet
+    for i in range(len(hospitals)):
+        crit: dict[str, str] = {}
         for r in low[i] + new[i]:
             s = _stars(r)
             if s is not None and s <= CRITICAL_MAX_STARS and r["_id"] not in crit:
-                crit[r["_id"]] = (h.title, str(r.get("snippet") or ""))
-    ids = list(crit)
-    labels: dict[int, dict[str, Any]] = {}
-    if ids:
+                crit[r["_id"]] = str(r.get("snippet") or "")
+        per_hosp.append(crit)
+
+    async def label_one(i: int) -> dict[str, dict[str, Any]]:
+        ids = list(per_hosp[i])
+        if not ids:
+            return {}
         data, _src = await deps.llm.json(
             th.LABEL_SYSTEM, th.label_prompt(f"{proc.label} (reviews matched the keyword “{kw}”)",
-                                             [(n, crit[k][0], crit[k][1]) for n, k in enumerate(ids)]),
+                                             [(n, hospitals[i].title, per_hosp[i][k]) for n, k in enumerate(ids)]),
             th.LABEL_SCHEMA, "review_labels")
-        labels = th.merge_labels(data, set(range(len(ids))))
-    by_id = {ids[n]: lab for n, lab in labels.items()}
+        return {ids[n]: lab for n, lab in th.merge_labels(data, set(range(len(ids)))).items()}
+
+    by_id: dict[str, dict[str, Any]] = {}
+    for part in await asyncio.gather(*(label_one(i) for i in range(len(hospitals)))):
+        by_id.update(part)
+    n_low = sum(len(c) for c in per_hosp)
     label_source = "llm" if by_id else "rules"
-    await step("label", f"{len(ids)} complaints labelled by "
-                        + ("Gemini (labels only; every count is computed by code)" if by_id else "keyword rules"),
-               "done")
+    model = deps.llm.model if by_id else None
+    await step("label", f"{n_low} low-rated reviews labelled by "
+                        + (f"{model} ({len(by_id)} labels; every count is computed by code)" if by_id
+                           else "keyword rules"), "done")
 
     # 4. Facts (code only) ---------------------------------------------------------------------------
-    cutoff = now - timedelta(days=round(30.44 * RECENT_MONTHS))
-    cards = [_card(h, low[i], new[i], by_id, proc, cutoff, slices[2 * i] is not None)
+    # The window is measured from when Google returned the reviews, not from today: cached or recorded data
+    # must not slide out of (or into) "the last 24 months".
+    as_of = _fetched_at([s for s in slices if s]) or now
+    cutoff = as_of - timedelta(days=round(30.44 * RECENT_MONTHS))
+    cards = [_card(h, low[i], new[i], by_id, proc, cutoff, slices[2 * i] is not None, slices[2 * i + 1] is not None)
              for i, h in enumerate(hospitals)]
     result = {
         "procedure": proc.label, "procedure_id": proc.id, "keyword": kw, "place": place, "city": city,
         "hospitals": cards, "skipped": skipped[:25], "themes": th.THEMES, "asks": _asks(cards),
-        "label_source": label_source, "recent_months": RECENT_MONTHS, "as_of": now.date().isoformat(),
+        "label_source": label_source, "label_model": model, "recent_months": RECENT_MONTHS,
+        "as_of": as_of.date().isoformat(),
         "credits_spent": sum(1 for c in calls if c.source == "live" and c.ok),
         "searches": len(calls), "ms": int((time.perf_counter() - t0) * 1000),
     }
@@ -159,17 +173,49 @@ def short(title: str) -> str:
     return title.split(",")[0].split(" - ")[0].split(" | ")[0][:40]
 
 
+def _fetched_at(responses: list[dict[str, Any]]) -> datetime | None:
+    """Latest `search_metadata.created_at` ("2026-10-08 10:22:00 UTC") among the review responses."""
+    out = None
+    for d in responses:
+        meta = d.get("search_metadata") if isinstance(d.get("search_metadata"), dict) else {}
+        raw = str(meta.get("created_at") or "").replace(" UTC", "+00:00")
+        when = _parse_date(raw.replace(" ", "T", 1)) if raw else None
+        if when and (out is None or when > out):
+            out = when
+    return out
+
+
 def _stars(r: dict[str, Any]) -> float | None:
     v = r.get("rating")
-    return float(v) if isinstance(v, (int, float)) else None
+    if isinstance(v, bool):
+        return None
+    if isinstance(v, (int, float)):
+        return float(v)
+    try:
+        return float(str(v))
+    except ValueError:
+        return None
 
 
 def _reviews(data: dict[str, Any] | None) -> list[dict[str, Any]]:
+    revs = (data or {}).get("reviews")
     out = []
-    for n, r in enumerate((data or {}).get("reviews") or []):
+    for n, r in enumerate(revs if isinstance(revs, list) else []):
         if isinstance(r, dict):
             out.append({**r, "_id": str(r.get("review_id") or f"{id(data)}-{n}")})
     return out
+
+
+HARSH = re.compile(r"scam|fraud|cheat|worst|avoid|pathetic|horrible|loot|disgust|useless|never (?:go|come|visit)",
+                   re.IGNORECASE)
+
+
+def _calm(r: dict[str, Any]) -> bool:
+    """Prefer measured, specific excerpts on the cards; shouting is still counted, just not featured first."""
+    t = r["excerpt"]
+    letters = [c for c in t if c.isalpha()]
+    shouting = len(letters) > 20 and sum(c.isupper() for c in letters) / len(letters) > 0.5
+    return not shouting and not HARSH.search(t)
 
 
 def _view(r: dict[str, Any], lab: dict[str, Any] | None, proc: Procedure, cutoff: datetime) -> dict[str, Any]:
@@ -180,16 +226,20 @@ def _view(r: dict[str, Any], lab: dict[str, Any] | None, proc: Procedure, cutoff
     critical = stars is not None and stars <= CRITICAL_MAX_STARS
     by = "llm" if lab is not None else None
     if critical and lab is None:
-        lab = {"themes": th.rule_themes(snippet), "scope": th.rule_scope(snippet, proc.words), "reason": ""}
+        themes = th.rule_themes(snippet)
+        lab = {"themes": themes, "scope": th.rule_scope(snippet, proc.words), "reason": "",
+               "problem": bool(themes) or not th.sounds_positive(snippet)}
         by = "rules"
     resp = r.get("response") if isinstance(r.get("response"), dict) else None
     link = str(r.get("link") or "")
     return {
         "id": r["_id"], "stars": stars, "critical": critical,
+        # a complaint is a 1–2★ review that raises a problem ("…father full satisfied, thank you" at 2★ doesn't)
+        "complaint": critical and bool((lab or {}).get("problem", True)),
         "date": when.date().isoformat() if when else None,
         "edited": edited.date().isoformat() if edited and when and (edited - when).days > 7 else None,
         "recent": bool(when and when >= cutoff),
-        "excerpt": excerpt(snippet), "link": link if link.startswith("https://www.google.com/") else None,
+        "excerpt": excerpt(snippet), "link": link if link.startswith("https://www.google.com/maps/") else None,
         "themes": (lab or {}).get("themes", []) if critical else [],
         "scope": (lab or {}).get("scope", "other") if critical else None,
         "replied": bool(resp and (resp.get("snippet") or resp.get("extracted_snippet"))),
@@ -198,22 +248,33 @@ def _view(r: dict[str, Any], lab: dict[str, Any] | None, proc: Procedure, cutoff
 
 
 def _card(h: Hospital, low: list[dict[str, Any]], new: list[dict[str, Any]], labels: dict[str, dict[str, Any]],
-          proc: Procedure, cutoff: datetime, answered: bool) -> dict[str, Any]:
+          proc: Procedure, cutoff: datetime, low_answered: bool, new_answered: bool) -> dict[str, Any]:
     lv = [_view(r, labels.get(r["_id"]), proc, cutoff) for r in low]
     nv = [_view(r, labels.get(r["_id"]), proc, cutoff) for r in new]
-    crit = [r for r in lv if r["critical"]]
+    # Complaints from BOTH slices, de-duplicated: a recent 1★ may sit in the newest list but not in the 20 lowest.
+    seen: dict[str, dict[str, Any]] = {}
+    for r in lv + nv:
+        if r["complaint"] and r["id"] not in seen:
+            seen[r["id"]] = r
+    crit = list(seen.values())
     # The lowest-first list holds every 1–2★ match once it reaches a ≥3★ review (or ends before 20).
     complete = len(lv) < PAGE or any(not r["critical"] for r in lv)
     recent_proc = [r for r in crit if r["recent"] and r["scope"] == "procedure_or_admission"]
     recent_any = [r for r in crit if r["recent"]]
     newest_dates = [r["date"] for r in nv if r["date"]]
     themes = {t: sum(1 for r in recent_proc if t in r["themes"]) for t in th.THEMES}
-    pool = sorted(recent_proc, key=lambda r: r["date"] or "", reverse=True) + \
-        sorted([r for r in recent_any if r not in recent_proc], key=lambda r: r["date"] or "", reverse=True)
+
+    def order(rs: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        return sorted(sorted(rs, key=lambda r: r["date"] or "", reverse=True), key=lambda r: not _calm(r))
+
+    pool = order(recent_proc) + order([r for r in recent_any if r not in recent_proc])
+    status = "ok" if (lv or nv) else ("no_reviews" if low_answered else "failed")
     return {
         **h.to_dict(),
-        "status": "ok" if lv else ("no_reviews" if answered else "failed"),
+        "status": status,
         "low_read": len(lv), "complete": complete,
+        "low_status": "ok" if lv else ("no_reviews" if low_answered else "failed"),
+        "new_status": "ok" if nv else ("no_reviews" if new_answered else "failed"),
         "complaints": len(crit),
         "complaints_recent": len(recent_any),
         "complaints_recent_procedure": len(recent_proc),
@@ -221,10 +282,10 @@ def _card(h: Hospital, low: list[dict[str, Any]], new: list[dict[str, Any]], lab
         "replied": sum(1 for r in crit if r["replied"]),
         "new_read": len(nv),
         "new_critical": sum(1 for r in nv if r["critical"]),
+        "low_stars_no_issue": len({r["id"] for r in lv + nv if r["critical"] and not r["complaint"]}),
         "new_span": [min(newest_dates), max(newest_dates)] if newest_dates else None,
         "themes": themes,
         "excerpts": pool[:6],
-        "lowest": lv, "newest": nv,
     }
 
 

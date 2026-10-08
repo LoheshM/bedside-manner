@@ -5,6 +5,7 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
+import time
 from contextlib import asynccontextmanager
 from typing import Any
 
@@ -24,6 +25,10 @@ WEB = ROOT / "web"
 EXAMPLES: list[dict[str, str]] = [
     {"label": "Childbirth · Koramangala, Bengaluru", "procedure": "delivery", "area": "Koramangala",
      "city": "Bengaluru", "hint": "Three 4.6–4.7★ maternity hospitals"},
+    {"label": "Cataract surgery · Chennai", "procedure": "cataract", "area": "", "city": "Chennai",
+     "hint": "Three 4.9–5★ eye hospitals"},
+    {"label": "Dialysis · Hyderabad", "procedure": "dialysis", "area": "", "city": "Hyderabad",
+     "hint": "Who replies to complaints, and an unknown"},
     {"label": "Knee replacement · Whitefield, Bengaluru", "procedure": "knee", "area": "Whitefield",
      "city": "Bengaluru", "hint": "When recent complaints are rare"},
 ]
@@ -62,7 +67,8 @@ def create_app(settings: Settings | None = None, deps: pipeline.Deps | None = No
                 await runner(emit)
             except Exception:
                 log.exception("pipeline failed")
-                await queue.put(("error", {"text": "Something went wrong while comparing hospitals."}))
+                # "failure", not "error": EventSource's own `error` event would swallow it in the browser
+                await queue.put(("failure", {"text": "Something went wrong while comparing hospitals."}))
             finally:
                 await queue.put(None)
 
@@ -93,10 +99,16 @@ def create_app(settings: Settings | None = None, deps: pipeline.Deps | None = No
         d = app.state.deps
         return stream(lambda emit: pipeline.run(procedure, area, city, d, emit))
 
+    acct_cache: dict[str, Any] = {"at": 0.0, "value": None}
+
     @app.get("/api/status")
     async def status():
         d: pipeline.Deps = app.state.deps
-        acct = await d.serp.account() if d.serp.mode != "replay" else None
+        acct = None
+        if d.serp.mode != "replay":  # the (free) account call is cached for 5 minutes
+            if time.time() - acct_cache["at"] > 300:
+                acct_cache.update(at=time.time(), value=await d.serp.account())
+            acct = {"searches_left": (acct_cache["value"] or {}).get("searches_left")}
         return {"mode": d.serp.mode, "llm": d.llm.model if d.llm.available else None,
                 "credits_per_check": d.credits_per_check, "account": acct, "cities": list(CITIES),
                 "procedures": [{"id": p.id, "label": p.label} for p in PROCEDURES.values()]}

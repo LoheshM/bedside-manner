@@ -215,6 +215,7 @@ class SerpClient:
             except Exception:
                 if budget is not None:
                     budget.refund()  # failed searches are not billed by SerpApi
+                self.release_slot()
                 raise
             call = SerpCall(engine, purpose, params, "live", _ms(t0), True, result_count=_count_results(data))
             return data
@@ -227,15 +228,26 @@ class SerpClient:
                 if asyncio.iscoroutine(res):
                     await res
 
+    live_per_day: int = 0  # set by the app; 0 = unlimited
+
     def _check_hourly(self) -> None:
-        if not self.live_per_hour:
+        """Server-wide caps on billed searches per rolling hour and per rolling day (the account has ~250/month)."""
+        if not self.live_per_hour and not self.live_per_day:
             return
         now = time.time()
-        while self._live_times and now - self._live_times[0] > 3600:
+        while self._live_times and now - self._live_times[0] > 86400:
             self._live_times.popleft()
-        if len(self._live_times) >= self.live_per_hour:
+        last_hour = sum(1 for t in self._live_times if now - t <= 3600)
+        if self.live_per_hour and last_hour >= self.live_per_hour:
             raise BudgetExceeded("hourly live-search limit reached on this server; cached results only")
+        if self.live_per_day and len(self._live_times) >= self.live_per_day:
+            raise BudgetExceeded("daily live-search limit reached on this server; cached results only")
         self._live_times.append(now)
+
+    def release_slot(self) -> None:
+        """A failed search isn't billed by SerpApi, so it shouldn't use up a cap slot either."""
+        if self._live_times:
+            self._live_times.pop()
 
     async def _live_and_store(self, key: str, engine: str, params: dict[str, Any]) -> dict[str, Any]:
         data = await self._live(engine, params)

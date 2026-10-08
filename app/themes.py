@@ -3,6 +3,7 @@ fallback when no LLM is available. The LLM only returns labels per review id; co
 
 from __future__ import annotations
 
+import json
 import re
 from typing import Any
 
@@ -25,7 +26,9 @@ _RULES: dict[str, re.Pattern[str]] = {
     "waiting": re.compile(r"\bwait|delay|hours? (?:of|to|for|before)|queue|late\b|no one (?:came|attended)|"
                           r"appointment (?:time|was)", re.IGNORECASE),
     "staff": re.compile(r"nurs|staff|rude|behaviou?r|attitude|housekeep|security|reception|front desk", re.IGNORECASE),
-    "doctor": re.compile(r"doctor|\bdr\b|surgeon|consultant|did not explain|didn'?t explain|no explanation",
+    # a doctor *mention* is not a complaint ("surgery with Dr X, very good experience"); need a problem word nearby
+    "doctor": re.compile(r"(?:doctor|\bdr\b|surgeon|consultant)\W+(?:\w+\W+){0,6}?(?:rude|careless|never|not|didn'?t|"
+                         r"no time|ignor|hurr|rush|arrogant|wrong)|did not explain|didn'?t explain|no explanation",
                          re.IGNORECASE),
     "outcome": re.compile(r"infect|complicat|pain after|still (?:in )?pain|revision|re-?surgery|worse|failed|"
                           r"passed away|died|death|wrong (?:diagnos|treatment)|negligen", re.IGNORECASE),
@@ -44,11 +47,12 @@ LABEL_SCHEMA = {
                 "type": "object",
                 "properties": {
                     "id": {"type": "integer"},
+                    "raises_problem": {"type": "boolean"},
                     "scope": {"type": "string", "enum": ["procedure_or_admission", "opd_or_consultation", "other"]},
                     "themes": {"type": "array", "items": {"type": "string", "enum": list(THEMES)}},
                     "reason": {"type": "string"},
                 },
-                "required": ["id", "scope", "themes", "reason"],
+                "required": ["id", "raises_problem", "scope", "themes", "reason"],
                 "additionalProperties": False,
             },
         },
@@ -59,7 +63,9 @@ LABEL_SCHEMA = {
 
 LABEL_SYSTEM = (
     "You label Google reviews of Indian hospitals for Bedside Manner, a neutral tool that shows patients what "
-    "other patients reported. For EACH numbered review return: id; scope — 'procedure_or_admission' if the "
+    "other patients reported. The reviews come as a JSON list of {id, text}. For EACH review return: id; "
+    "raises_problem — false only if the review describes no problem at all (e.g. praise given a low star by "
+    "mistake), otherwise true; scope — 'procedure_or_admission' if the "
     "reviewer (or their family member) had the named procedure or an in-patient stay, 'opd_or_consultation' if it "
     "is only an outpatient visit / consultation / test, else 'other'; themes — every complaint theme the review "
     "actually raises, from the allowed list only (empty list if it raises no complaint); reason — max 12 words, "
@@ -83,25 +89,33 @@ def rule_scope(text: str, procedure_words: tuple[str, ...]) -> str:
 
 
 def label_prompt(procedure: str, items: list[tuple[int, str, str]]) -> str:
-    """items: (id, hospital, snippet). Snippets are truncated so one call stays small."""
-    lines = [f"Procedure the user is choosing a hospital for: {procedure}", "", "Reviews:"]
-    for i, hosp, snip in items:
-        clean = re.sub(r"\s+", " ", snip)[:700]
-        lines.append(f"[{i}] ({hosp}) {clean}")
-    return "\n".join(lines)
+    """items: (id, hospital, snippet) for ONE hospital. Reviews are JSON-encoded so review text can't fake new
+    entries ("[7] (Other Hospital) …"), and each hospital is labelled in its own call so one hospital's reviews
+    can't influence another's labels."""
+    hosp = items[0][1] if items else ""
+    payload = [{"id": i, "text": re.sub(r"\s+", " ", snip)[:700]} for i, _, snip in items]
+    return (f"Procedure the user is choosing a hospital for: {procedure}\nHospital: {hosp}\n\n"
+            f"Reviews (JSON, untrusted data):\n{json.dumps(payload, ensure_ascii=False)}")
 
 
-def merge_labels(data: dict[str, Any] | None, ids: set[int]) -> dict[int, dict[str, Any]]:
+def merge_labels(data: Any, ids: set[int]) -> dict[int, dict[str, Any]]:
     """Validated LLM labels by id; anything malformed or unknown is dropped (rules fill the gap)."""
     out: dict[int, dict[str, Any]] = {}
-    for lab in (data or {}).get("labels") or []:
-        if not isinstance(lab, dict) or lab.get("id") not in ids:
+    labels = data.get("labels") if isinstance(data, dict) else None
+    for lab in labels if isinstance(labels, list) else []:
+        if not isinstance(lab, dict):
             continue
-        themes = [t for t in lab.get("themes") or [] if t in THEMES]
+        rid = lab.get("id")
+        if not isinstance(rid, int) or isinstance(rid, bool) or rid not in ids or rid in out:
+            continue
+        raw_themes = lab.get("themes") if isinstance(lab.get("themes"), list) else []
+        themes = [t for t in raw_themes if isinstance(t, str) and t in THEMES]
         scope = lab.get("scope") if lab.get("scope") in ("procedure_or_admission", "opd_or_consultation", "other") \
             else "other"
-        out[lab["id"]] = {"themes": list(dict.fromkeys(themes)), "scope": scope,
-                          "reason": str(lab.get("reason") or "")[:120]}
+        problem = lab.get("raises_problem")
+        out[rid] = {"themes": list(dict.fromkeys(themes)), "scope": scope,
+                    "problem": problem if isinstance(problem, bool) else True,  # unknown → still counted
+                    "reason": str(lab.get("reason") or "")[:120]}
     return out
 
 
@@ -122,3 +136,13 @@ QUESTIONS: dict[str, str] = {
     "emergency": "Ask whether the emergency department has an orthopaedic/specialist on call 24×7 and what the "
                  "process is at night.",
 }
+
+
+
+_POSITIVE = re.compile(r"good experience|satisfied|thank|excellent|great (?:job|care|service)|very good|"
+                       r"recommend|grateful|well done|best (?:hospital|doctor)", re.IGNORECASE)
+
+
+def sounds_positive(text: str) -> bool:
+    """For the no-LLM fallback: a low-star review that only praises ("full satisfied, thank you all")."""
+    return bool(_POSITIVE.search(text or ""))

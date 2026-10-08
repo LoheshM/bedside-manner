@@ -69,7 +69,14 @@ function start() {
   on("step", step);
   on("serp_call", serpCall);
   on("notice", (n) => $("#notices").insertAdjacentHTML("beforeend", `<div class="notice ${n.level === "info" ? "info" : ""}">${esc(n.text)}</div>`));
-  on("result", (r) => { gotResult = true; render(r); });
+  on("result", (r) => {
+    gotResult = true;
+    try { render(r); } catch (err) {
+      console.warn(err);
+      $("#notices").insertAdjacentHTML("beforeend", `<div class="notice">The results arrived but couldn't be displayed. Please try again.</div>`);
+    }
+  });
+  on("failure", (d) => { gotResult = true; $("#notices").insertAdjacentHTML("beforeend", `<div class="notice">${esc(d.text || "Something went wrong.")}</div>`); finish(); });
   on("done", (d) => { meta(d.ms); finish(); });
   es.onerror = () => {
     if (!gotResult) $("#notices").insertAdjacentHTML("beforeend", `<div class="notice">The comparison couldn't run or was interrupted. Please try again.</div>`);
@@ -125,16 +132,17 @@ function card(c, r) {
   const themeChips = Object.entries(c.themes).filter(([, v]) => v).sort((a, b) => b[1] - a[1])
     .map(([t, v]) => `<span class="tchip">${esc(r.themes[t])} · ${v}</span>`).join("") || `<span class="tchip zero">no recurring theme</span>`;
   const quotes = c.excerpts.slice(0, 2).map(quoteHtml).join("")
-    || `<p class="muted" style="margin:0;font-size:13px">No 1–2★ review mentioning “${esc(r.keyword)}” in the last ${months} months.${c.newest_complaint ? ` The newest is from ${fmtDate(c.newest_complaint)}.` : ""}</p>`;
+    || `<p class="muted" style="margin:0;font-size:13px">${c.complete ? `No complaint mentioning “${esc(r.keyword)}” in the last ${months} months.` : `None from the last ${months} months among the 20 lowest-rated and 20 newest “${esc(r.keyword)}” reviews we read.`}${c.newest_complaint ? ` The newest complaint we read is from ${fmtDate(c.newest_complaint)}.` : ""}</p>`;
   return `<article class="card hcard">
     <div><div class="hname" title="${esc(c.title)}">${esc(short(c.title))}</div>
       <div class="hmeta"><span class="stars">${esc(c.rating ?? "–")}★</span> · ${esc((c.reviews || 0).toLocaleString("en-IN"))} Google reviews</div></div>
-    <div class="stat ${n ? "warn" : "calm"}"><b>${c.complete ? "" : "≥"}${n}</b>
-      <span>1–2★ reviews about the ${esc(r.procedure.toLowerCase())} or the stay, last ${months} months</span>
-      <span class="sub">${count(c, "complaints_recent")} recent 1–2★ “${esc(r.keyword)}” reviews in all · ${count(c, "complaints")} ever${c.complete ? "" : " (Google shows 20 at a time, so “≥”)"}</span></div>
-    <div class="stat"><b>${c.replied}/${c.complaints}</b><span>complaints the hospital replied to</span></div>
-    <div class="stat"><b>${c.new_critical}/${c.new_read}</b><span>of the newest “${esc(r.keyword)}” reviews are 1–2★</span>
-      ${c.new_span ? `<span class="sub">covering ${fmtDate(c.new_span[0])} – ${fmtDate(c.new_span[1])}</span>` : ""}</div>
+    <div class="stat"><b>${c.complete ? "" : "≥"}${n}</b>
+      <span>complaints about the ${esc(r.procedure.toLowerCase())} or the stay, last ${months} months</span>
+      <span class="sub">${count(c, "complaints_recent")} recent “${esc(r.keyword)}” complaints in all · ${count(c, "complaints")} ever${c.complete ? "" : " (Google shows 20 at a time, so “≥”)"}${c.low_stars_no_issue ? ` · ${c.low_stars_no_issue} more 1–2★ without a stated problem` : ""}</span></div>
+    <div class="stat"><b>${c.replied}/${c.complaints}</b><span>of the complaints we read have a reply from the hospital</span></div>
+    ${c.new_read ? `<div class="stat"><b>${c.new_critical}/${c.new_read}</b><span>of the newest “${esc(r.keyword)}” reviews are 1–2★</span>
+      ${c.new_span ? `<span class="sub">covering ${fmtDate(c.new_span[0])} – ${fmtDate(c.new_span[1])}</span>` : ""}</div>`
+      : `<div class="unknown">Google's filter returned no <i>newest</i> “${esc(r.keyword)}” reviews for this hospital — unknown, not zero.</div>`}
     <div class="tchips">${themeChips}</div>
     ${quotes}
   </article>`;
@@ -165,7 +173,7 @@ function render(r) {
   out.push(`<details class="card more"><summary>Complaint themes by hospital (last ${r.recent_months} months, about the ${esc(r.procedure.toLowerCase())} or the stay)</summary>
     <div class="grid-wrap"><table class="tgrid"><thead><tr><th>Hospital</th>${themeKeys.map((t) => `<th>${esc(r.themes[t])}</th>`).join("")}</tr></thead>
     <tbody>${hs.map((c) => `<tr><td>${esc(short(c.title))}</td>${themeKeys.map((t) => { const v = c.themes?.[t] || 0; return `<td class="${v ? "hot" : ""}">${v || "·"}</td>`; }).join("")}</tr>`).join("")}</tbody></table></div>
-    <p class="muted" style="font-size:13px">A review can raise several themes. Themes were labelled by ${r.label_source === "llm" ? "Gemini 2.5 Flash (labels only)" : "keyword rules"}; every number is counted by code.</p></details>`);
+    <p class="muted" style="font-size:13px">A review can raise several themes. Themes were labelled by ${r.label_source === "llm" ? `${esc(r.label_model)} (labels only)` : "keyword rules"}; every number is counted by code.</p></details>`);
 
   const more = hs.map((c) => (c.excerpts || []).slice(2).map(quoteHtml).join("") ? `<h3>${esc(short(c.title))}</h3>${c.excerpts.slice(2).map(quoteHtml).join("")}` : "").join("");
   if (more) out.push(`<details class="card more"><summary>More recent complaints</summary><div style="display:grid;gap:8px;margin-top:10px">${more}</div></details>`);
@@ -173,7 +181,7 @@ function render(r) {
   out.push(`<details class="card more"><summary>How this was checked</summary><div class="how">
     <ol><li>Google Maps search for “${esc(r.procedure.toLowerCase())}” hospitals near ${esc(r.place)} (SerpApi). Doctors' own listings, clinics, places with under 200 reviews and extra branches of the same group are skipped; the ${hs.length} most-reviewed hospitals are compared.</li>
     <li>For each hospital, two Google Maps review searches with the <b>same keyword “${esc(r.keyword)}”</b>: lowest-rated first, and newest first (20 reviews each — Google's page size, so counts that hit 20 are shown as “≥”).</li>
-    <li>Every 1–2★ review is labelled — about the procedure/stay or only an OPD visit, and which complaint themes it raises — by ${r.label_source === "llm" ? "Gemini 2.5 Flash, which returns labels only" : "keyword rules"}. Code counts everything. Dates are when the review was first posted.</li>
+    <li>Every 1–2★ review is labelled — about the procedure/stay or only an OPD visit, and which complaint themes it raises — by ${r.label_source === "llm" ? `${esc(r.label_model)}, which returns labels only` : "keyword rules"}. Code counts everything. Dates are when the review was first posted.</li>
     <li>Names of doctors and staff are removed from excerpts. Reviews are individual experiences and may be outdated or unrepresentative.</li></ol>
     ${r.skipped?.length ? `<p><b>Skipped places</b></p><ul class="skips">${r.skipped.slice(0, 12).map((s) => `<li>${esc(s.title)} — ${esc(s.why)}</li>`).join("")}</ul>` : ""}
     <p class="muted">${plural(r.searches, "search")} · ${r.credits_spent} credit${r.credits_spent === 1 ? "" : "s"} spent · ${(r.ms / 1000).toFixed(1)} s</p></div></details>`);

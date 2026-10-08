@@ -1,0 +1,543 @@
+[
+ {
+  "event": "start",
+  "data": {
+   "procedure": "Knee replacement",
+   "place": "Whitefield, Bengaluru",
+   "keyword": "knee",
+   "mode": "auto"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "find",
+   "label": "Finding hospitals for knee replacement near Whitefield, Bengaluru",
+   "status": "running"
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps",
+   "purpose": "Hospitals for “Knee replacement” near Whitefield, Bengaluru",
+   "params": {
+    "type": "search",
+    "q": "knee replacement hospital in Whitefield, Bengaluru",
+    "ll": "@12.9716,77.5946,12z",
+    "hl": "en",
+    "gl": "in"
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "hospitals",
+  "data": {
+   "hospitals": [
+    {
+     "title": "Manipal Hospital Whitefield",
+     "data_id": "0x3bae11fc05fbc8a1:0xd4c8ae89f2811666",
+     "place_id": "ChIJocj7BfwRrjsRZhaB8omuyNQ",
+     "rating": 4.7,
+     "reviews": 37221,
+     "type": "Private hospital",
+     "address": "ITPL Main Rd, opposite PRESTIGE SHANTINIKETAN, KIADB Export Promotion Industrial Area, Whitefield, Bengaluru, Karnataka ",
+     "lat": 12.988055399999999,
+     "lng": 77.72877439999999,
+     "km": null
+    },
+    {
+     "title": "Svastha Hospital",
+     "data_id": "0x3bae111db73360f5:0x559e44dd3fc20ea5",
+     "place_id": "ChIJ9WAztx0RrjsRpQ7CP91EnlU",
+     "rating": 3.8,
+     "reviews": 2435,
+     "type": "Hospital",
+     "address": "Site Number 3, Main Road, Narayanappa Garden, Whitefield, Bengaluru, Karnataka 560066",
+     "lat": 12.9660082,
+     "lng": 77.7492376,
+     "km": null
+    },
+    {
+     "title": "Medicover Hospitals",
+     "data_id": "0x3bae0d11bd2f148d:0x87ab83fcafe7c42b",
+     "place_id": "ChIJjRQvvRENrjsRK8Tnr_yDq4c",
+     "rating": 5,
+     "reviews": 410,
+     "type": "Orthopedic clinic",
+     "address": "XPRF+973, Medicover Hospital, ITPL main road, Hoodi village, opposite Hotel Zuri, Whitefield, Bengaluru, Karnataka 56004",
+     "lat": 12.9908755,
+     "lng": 77.7231609,
+     "km": null
+    }
+   ],
+   "skipped": [
+    {
+     "title": "Aster Orthopaedics, Sports & Rehab Centre - Top Orthopedic & Joint Replacement Hospital in",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr.Krishna Kumar MS |Robotic Joint Replacement |Arthroscopy Sports Medicine |Orthopedic su",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "PVR POLYCLINIC ( ortho & maternity )",
+     "why": "Fertility clinic listing"
+    },
+    {
+     "title": "Dr Kiran Veerendra, Orthopaedic Surgeon – Shoulder & Knee Specialist",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr Kumardev Arvind Rajamanya",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Karan Kukreja | Best Orthopaedic surgeon in Whitefield | Manipal Hospital Whitefield",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "DR.HARSHA.GN",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Yogesh K – Best Orthopedic Doctor in Bangalore",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Madan Temker M.S., D.N.B, (Ortho), PGDHA, Best Orthopedic Surgeon in Whitefield Bangal",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Sarath Chandra Poodi | Best Orthopedic Surgeon in Varthur Whitefield",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. D. Harikishore Reddy | Best Orthopedic surgeon in Whitefield | Manipal Hospital Whitef",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Ajay S S – Orthopaedic & Joint Replacement Specialist",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. A Yogishwar Veerappa",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "MTB Orthopaedic Hospital",
+     "why": "only 188 reviews"
+    },
+    {
+     "title": "Dr. Bharat P Sarkar | Best Spine, Back & Neck Pain Surgeon in Whitefield | Manipal Hospita",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr Ramachandran - Spine, Spinal Neuro, and Scoliosis surgeon",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. V G Rajan | Manipal Hospital Whitefield",
+     "why": "a doctor's own listing"
+    }
+   ]
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "find",
+   "label": "Comparing the 3 most-reviewed hospitals · 17 other places skipped (doctors' own listings, clinics, small places, extra branches, fewer reviews)",
+   "status": "done"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "reviews",
+   "label": "Reading reviews that mention “knee”: lowest-rated first, and newest first",
+   "status": "running"
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Lowest-rated “knee” reviews · Manipal Hospital Whitefield",
+   "params": {
+    "data_id": "0x3bae11fc05fbc8a1:0xd4c8ae89f2811666",
+    "query": "knee",
+    "sort_by": "ratingLow",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Newest “knee” reviews · Manipal Hospital Whitefield",
+   "params": {
+    "data_id": "0x3bae11fc05fbc8a1:0xd4c8ae89f2811666",
+    "query": "knee",
+    "sort_by": "newestFirst",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Lowest-rated “knee” reviews · Svastha Hospital",
+   "params": {
+    "data_id": "0x3bae111db73360f5:0x559e44dd3fc20ea5",
+    "query": "knee",
+    "sort_by": "ratingLow",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 1,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Newest “knee” reviews · Svastha Hospital",
+   "params": {
+    "data_id": "0x3bae111db73360f5:0x559e44dd3fc20ea5",
+    "query": "knee",
+    "sort_by": "newestFirst",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Lowest-rated “knee” reviews · Medicover Hospitals",
+   "params": {
+    "data_id": "0x3bae0d11bd2f148d:0x87ab83fcafe7c42b",
+    "query": "knee",
+    "sort_by": "ratingLow",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Newest “knee” reviews · Medicover Hospitals",
+   "params": {
+    "data_id": "0x3bae0d11bd2f148d:0x87ab83fcafe7c42b",
+    "query": "knee",
+    "sort_by": "newestFirst",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "cache",
+   "ms": 0,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": false
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "reviews",
+   "label": "Read Manipal Hospital Whitefield: 20 + 20 · Svastha Hospital: 20 + 20 · Medicover Hospitals: 20 + 20",
+   "status": "done"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "label",
+   "label": "Reading what each low-rated review is about",
+   "status": "running"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "label",
+   "label": "6 low-rated reviews labelled by gemini-2.5-flash (6 labels; every count is computed by code)",
+   "status": "done"
+  }
+ },
+ {
+  "event": "result",
+  "data": {
+   "procedure": "Knee replacement",
+   "procedure_id": "knee",
+   "keyword": "knee",
+   "place": "Whitefield, Bengaluru",
+   "city": "Bengaluru",
+   "hospitals": [
+    {
+     "title": "Manipal Hospital Whitefield",
+     "data_id": "0x3bae11fc05fbc8a1:0xd4c8ae89f2811666",
+     "place_id": "ChIJocj7BfwRrjsRZhaB8omuyNQ",
+     "rating": 4.7,
+     "reviews": 37221,
+     "type": "Private hospital",
+     "address": "ITPL Main Rd, opposite PRESTIGE SHANTINIKETAN, KIADB Export Promotion Industrial Area, Whitefield, Bengaluru, Karnataka ",
+     "lat": 12.988055399999999,
+     "lng": 77.72877439999999,
+     "km": null,
+     "status": "ok",
+     "low_read": 20,
+     "complete": true,
+     "low_status": "ok",
+     "new_status": "ok",
+     "complaints": 4,
+     "complaints_recent": 0,
+     "complaints_recent_procedure": 0,
+     "newest_complaint": "2022-11-13",
+     "replied": 4,
+     "new_read": 20,
+     "new_critical": 0,
+     "low_stars_no_issue": 1,
+     "new_span": [
+      "2026-05-30",
+      "2026-09-24"
+     ],
+     "themes": {
+      "billing": 0,
+      "insurance": 0,
+      "waiting": 0,
+      "staff": 0,
+      "doctor": 0,
+      "outcome": 0,
+      "discharge": 0,
+      "hygiene": 0,
+      "emergency": 0
+     },
+     "excerpts": []
+    },
+    {
+     "title": "Svastha Hospital",
+     "data_id": "0x3bae111db73360f5:0x559e44dd3fc20ea5",
+     "place_id": "ChIJ9WAztx0RrjsRpQ7CP91EnlU",
+     "rating": 3.8,
+     "reviews": 2435,
+     "type": "Hospital",
+     "address": "Site Number 3, Main Road, Narayanappa Garden, Whitefield, Bengaluru, Karnataka 560066",
+     "lat": 12.9660082,
+     "lng": 77.7492376,
+     "km": null,
+     "status": "ok",
+     "low_read": 20,
+     "complete": true,
+     "low_status": "ok",
+     "new_status": "ok",
+     "complaints": 1,
+     "complaints_recent": 0,
+     "complaints_recent_procedure": 0,
+     "newest_complaint": "2024-04-03",
+     "replied": 0,
+     "new_read": 20,
+     "new_critical": 1,
+     "low_stars_no_issue": 0,
+     "new_span": [
+      "2016-06-14",
+      "2026-09-30"
+     ],
+     "themes": {
+      "billing": 0,
+      "insurance": 0,
+      "waiting": 0,
+      "staff": 0,
+      "doctor": 0,
+      "outcome": 0,
+      "discharge": 0,
+      "hygiene": 0,
+      "emergency": 0
+     },
+     "excerpts": []
+    },
+    {
+     "title": "Medicover Hospitals",
+     "data_id": "0x3bae0d11bd2f148d:0x87ab83fcafe7c42b",
+     "place_id": "ChIJjRQvvRENrjsRK8Tnr_yDq4c",
+     "rating": 5,
+     "reviews": 410,
+     "type": "Orthopedic clinic",
+     "address": "XPRF+973, Medicover Hospital, ITPL main road, Hoodi village, opposite Hotel Zuri, Whitefield, Bengaluru, Karnataka 56004",
+     "lat": 12.9908755,
+     "lng": 77.7231609,
+     "km": null,
+     "status": "ok",
+     "low_read": 20,
+     "complete": true,
+     "low_status": "ok",
+     "new_status": "ok",
+     "complaints": 0,
+     "complaints_recent": 0,
+     "complaints_recent_procedure": 0,
+     "newest_complaint": null,
+     "replied": 0,
+     "new_read": 20,
+     "new_critical": 0,
+     "low_stars_no_issue": 0,
+     "new_span": [
+      "2025-08-30",
+      "2026-08-13"
+     ],
+     "themes": {
+      "billing": 0,
+      "insurance": 0,
+      "waiting": 0,
+      "staff": 0,
+      "doctor": 0,
+      "outcome": 0,
+      "discharge": 0,
+      "hygiene": 0,
+      "emergency": 0
+     },
+     "excerpts": []
+    }
+   ],
+   "skipped": [
+    {
+     "title": "Aster Orthopaedics, Sports & Rehab Centre - Top Orthopedic & Joint Replacement Hospital in",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr.Krishna Kumar MS |Robotic Joint Replacement |Arthroscopy Sports Medicine |Orthopedic su",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "PVR POLYCLINIC ( ortho & maternity )",
+     "why": "Fertility clinic listing"
+    },
+    {
+     "title": "Dr Kiran Veerendra, Orthopaedic Surgeon – Shoulder & Knee Specialist",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr Kumardev Arvind Rajamanya",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Karan Kukreja | Best Orthopaedic surgeon in Whitefield | Manipal Hospital Whitefield",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "DR.HARSHA.GN",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Yogesh K – Best Orthopedic Doctor in Bangalore",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Madan Temker M.S., D.N.B, (Ortho), PGDHA, Best Orthopedic Surgeon in Whitefield Bangal",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Sarath Chandra Poodi | Best Orthopedic Surgeon in Varthur Whitefield",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. D. Harikishore Reddy | Best Orthopedic surgeon in Whitefield | Manipal Hospital Whitef",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Ajay S S – Orthopaedic & Joint Replacement Specialist",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. A Yogishwar Veerappa",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "MTB Orthopaedic Hospital",
+     "why": "only 188 reviews"
+    },
+    {
+     "title": "Dr. Bharat P Sarkar | Best Spine, Back & Neck Pain Surgeon in Whitefield | Manipal Hospita",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr Ramachandran - Spine, Spinal Neuro, and Scoliosis surgeon",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. V G Rajan | Manipal Hospital Whitefield",
+     "why": "a doctor's own listing"
+    }
+   ],
+   "themes": {
+    "billing": "Billing & estimates",
+    "insurance": "Insurance / cashless",
+    "waiting": "Waiting & delays",
+    "staff": "Nursing & staff behaviour",
+    "doctor": "Doctor communication",
+    "outcome": "Outcome & complications",
+    "discharge": "Admission & discharge process",
+    "hygiene": "Cleanliness",
+    "emergency": "Emergency handling"
+   },
+   "asks": [],
+   "label_source": "llm",
+   "label_model": "gemini-2.5-flash",
+   "recent_months": 24,
+   "as_of": "2026-10-08",
+   "credits_spent": 0,
+   "searches": 7,
+   "ms": 18
+  }
+ },
+ {
+  "event": "done",
+  "data": {
+   "credits_spent": 0,
+   "ms": 18
+  }
+ }
+]

@@ -426,7 +426,7 @@
        "date": "2026-06-11",
        "edited": null,
        "recent": true,
-       "excerpt": "A very poor experience from the front desk staff & surprisingly the doctor [name] Talking to them feels like dealing with a govt bank - unnecessary and exhausting. They could not be upfront about pricing details, when asked about insurance coverage for a cataract operation, all we could get out of …",
+       "excerpt": "A very poor experience from the front desk staff & surprisingly the doctor himself. Talking to them feels like dealing with a govt bank - unnecessary and exhausting. …",
        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wSFdtMTVUVU5KZHpCelJrSkhTMmhKVkRKdmVFRRAB!2m1!1s0x0:0xf18c3bf435e0e4c8!3m1!1s2@1:CAIQACodChtycF9oOmpHWm15TUNJdzBzRkJHS2hJVDJveEE%7C%7C?hl=en",
        "themes": [
         "staff",
@@ -609,14 +609,14 @@
    "as_of": "2026-10-08",
    "credits_spent": 0,
    "searches": 7,
-   "ms": 15
+   "ms": 19
   }
  },
  {
   "event": "done",
   "data": {
    "credits_spent": 0,
-   "ms": 15
+   "ms": 19
   }
  }
 ]

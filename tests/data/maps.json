@@ -1,0 +1,397 @@
+{
+ "search_parameters": {
+  "engine": "google_maps",
+  "type": "search",
+  "q": "knee replacement hospital in Whitefield Bengaluru",
+  "ll": "@12.9698,77.7500,13z",
+  "google_domain": "google.com",
+  "hl": "en",
+  "gl": "in"
+ },
+ "local_results": [
+  {
+   "position": 1,
+   "title": "Manipal Hospital Whitefield",
+   "place_id": "ChIJocj7BfwRrjsRZhaB8omuyNQ",
+   "data_id": "0x3bae11fc05fbc8a1:0xd4c8ae89f2811666",
+   "gps_coordinates": {
+    "latitude": 12.988055399999999,
+    "longitude": 77.72877439999999
+   },
+   "rating": 4.7,
+   "reviews": 37221,
+   "type": "Private hospital",
+   "types": [
+    "Private hospital",
+    "Fertility clinic",
+    "Orthopedic clinic",
+    "Orthopedic surgeon",
+    "Pain control clinic"
+   ],
+   "address": "ITPL Main Rd, opposite PRESTIGE SHANTINIKETAN, KIADB Export Promotion Industrial Area, Whitefield, Bengaluru, Karnataka 560066"
+  },
+  {
+   "position": 2,
+   "title": "Aster Orthopaedics, Sports & Rehab Centre - Top Orthopedic & Joint Replacement Hospital in Whitefield",
+   "place_id": "ChIJl5bwmNsRrjsRWXt1YbQ56Z0",
+   "data_id": "0x3bae11db98f09697:0x9de939b461757b59",
+   "gps_coordinates": {
+    "latitude": 12.9898099,
+    "longitude": 77.7340109
+   },
+   "rating": 2.3,
+   "reviews": 6,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Doctor",
+    "Orthopedic clinic",
+    "Orthotics & Prosthetics Centre",
+    "Pediatric orthopedic surgeon",
+    "Sports medicine clinic",
+    "Sports medicine physician",
+    "Surgeon"
+   ],
+   "address": "Main Road, off Whitefield, Sadara Mangala Industrial Area, Kadugodi, Bengaluru, Karnataka 560048"
+  },
+  {
+   "position": 3,
+   "title": "DR.HARSHA.GN",
+   "place_id": "ChIJVfYG0NwVrjsRm-Ij2VQDVAw",
+   "data_id": "0x3bae15dcd006f655:0xc540354d923e29b",
+   "gps_coordinates": {
+    "latitude": 12.989547499999999,
+    "longitude": 77.7336753
+   },
+   "rating": 4.9,
+   "reviews": 89,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon"
+   ],
+   "address": "3,4, ASTER WHITEFIELD HOSPITAL, Plot No 2, off ITPL Main Road, Sadara Mangala Industrial Area, Whitefield, Bengaluru, Karnataka 560048"
+  },
+  {
+   "position": 4,
+   "title": "Medicover Hospitals",
+   "place_id": "ChIJjRQvvRENrjsRK8Tnr_yDq4c",
+   "data_id": "0x3bae0d11bd2f148d:0x87ab83fcafe7c42b",
+   "gps_coordinates": {
+    "latitude": 12.9908755,
+    "longitude": 77.7231609
+   },
+   "rating": 5,
+   "reviews": 410,
+   "type": "Orthopedic clinic",
+   "types": [
+    "Orthopedic clinic"
+   ],
+   "address": "XPRF+973, Medicover Hospital, ITPL main road, Hoodi village, opposite Hotel Zuri, Whitefield, Bengaluru, Karnataka 560048"
+  },
+  {
+   "position": 5,
+   "title": "Dr. Karan Kukreja | Best Orthopaedic surgeon in Whitefield | Manipal Hospital Whitefield",
+   "place_id": "ChIJQVXw4dgRrjsR6GOCUWkb1hQ",
+   "data_id": "0x3bae11d8e1f05541:0x14d61b69518263e8",
+   "gps_coordinates": {
+    "latitude": 12.987960099999999,
+    "longitude": 77.7287553
+   },
+   "rating": 4.1,
+   "reviews": 36,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Doctor",
+    "Private hospital",
+    "Specialized hospital"
+   ],
+   "address": "Room no.29,Ground Floor, Manipal Hospitals Whitefield KR Puram Hobli, Off Hoodi Village, EPIP, Industrial Area, Whitefield, Bengaluru, Karnataka 560066"
+  },
+  {
+   "position": 6,
+   "title": "Dr Kumardev Arvind Rajamanya",
+   "place_id": "ChIJo-27kAQRrjsRZrU7Cb_8cYY",
+   "data_id": "0x3bae110490bbeda3:0x8671fcbf093bb566",
+   "gps_coordinates": {
+    "latitude": 13.013021499999999,
+    "longitude": 77.7621908
+   },
+   "rating": 4.9,
+   "reviews": 371,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon"
+   ],
+   "address": "Apollo clinic, Dr.kumardev A Rajamanya Dr, kumardev rajamanya, Seegehalli - Kannamangala Rd, Seegehalli, Kadugodi, Bengaluru, Karnataka 560115"
+  },
+  {
+   "position": 7,
+   "title": "Dr Kiran Veerendra, Orthopaedic Surgeon – Shoulder & Knee Specialist",
+   "place_id": "ChIJwyiLvWgTrjsRgQAYA7IRlaU",
+   "data_id": "0x3bae1368bd8b28c3:0xa59511b203180081",
+   "gps_coordinates": {
+    "latitude": 12.9579563,
+    "longitude": 77.7458412
+   },
+   "rating": 5,
+   "reviews": 40,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Health consultant",
+    "Orthopedic clinic",
+    "Sports medicine clinic",
+    "Sports medicine physician"
+   ],
+   "address": "Survey No. 10P &, 12P, Whitefield Main Rd, Varthur Kodi, Palm Meadows, Ramagondanahalli, Whitefield, Bengaluru, Karnataka 560066"
+  },
+  {
+   "position": 8,
+   "title": "Dr. Sarath Chandra Poodi | Best Orthopedic Surgeon in Varthur Whitefield",
+   "place_id": "ChIJN-OcQsINrjsRvZoX63z7ZXw",
+   "data_id": "0x3bae0dc2429ce337:0x7c65fb7ceb179abd",
+   "gps_coordinates": {
+    "latitude": 12.942247,
+    "longitude": 77.74711649999999
+   },
+   "rating": 4.8,
+   "reviews": 325,
+   "type": "Hospital",
+   "types": [
+    "Hospital"
+   ],
+   "address": "First Floor, GVR Square, Aria Multispeciality Clinic, 1/1A, opposite Govt PU college, Varthur, Bengaluru, Karnataka 560087"
+  },
+  {
+   "position": 9,
+   "title": "Dr.Krishna Kumar MS |Robotic Joint Replacement |Arthroscopy Sports Medicine |Orthopedic surgeon|Medicover Hospital Whitefield",
+   "place_id": "ChIJ_96uMhkRrjsR9Fc3bklTxNY",
+   "data_id": "0x3bae111932aedeff:0xd6c453496e3757f4",
+   "gps_coordinates": {
+    "latitude": 12.9915311,
+    "longitude": 77.72338239999999
+   },
+   "rating": 5,
+   "reviews": 57,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Sports medicine physician"
+   ],
+   "address": "Medicover hospitals,351 ITPL Main Road, Whitefield Road, ITPL Main Road Hoodi Village, Krishnarajapura, Hobli, Hoodi, Bengaluru, Karnataka 560048"
+  },
+  {
+   "position": 10,
+   "title": "Aster Hospital Whitefield Bangalore",
+   "place_id": "ChIJKbNMTagRrjsRDX0itEVFtLE",
+   "data_id": "0x3bae11a84d4cb329:0xb1b44545b4227d0d",
+   "gps_coordinates": {
+    "latitude": 12.9894945,
+    "longitude": 77.7337373
+   },
+   "rating": 4.7,
+   "reviews": 11001,
+   "type": "Hospital",
+   "types": [
+    "Hospital",
+    "Doctor",
+    "Family practice physician",
+    "Health consultant",
+    "Neurologist",
+    "ENT Specialist",
+    "Urologist"
+   ],
+   "address": "Sadaramangala, Plot No. 3 & 4, Main Road, off Whitefield, opposite ITPL Main Road, Industrial Area, Whitefield, Bengaluru, Karnataka 560048"
+  },
+  {
+   "position": 11,
+   "title": "Dr. Ajay S S – Orthopaedic & Joint Replacement Specialist",
+   "place_id": "ChIJs2xs7F4PrjsRBl0cqMe2k9I",
+   "data_id": "0x3bae0f5eec6c6cb3:0xd293b6c7a81c5d06",
+   "gps_coordinates": {
+    "latitude": 12.976474399999999,
+    "longitude": 77.7584662
+   },
+   "rating": 5,
+   "reviews": 59,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Orthopedic clinic",
+    "Orthopedic shoe store",
+    "Pain management physician",
+    "Pediatric orthopedic surgeon"
+   ],
+   "address": "ground floor, MR Aster, Vijayanagar, Whitefield, Bengaluru, Karnataka 560066"
+  },
+  {
+   "position": 12,
+   "title": "PVR POLYCLINIC ( ortho & maternity )",
+   "place_id": "ChIJ1ZRzZpcRrjsRRAE42yX21_s",
+   "data_id": "0x3bae1197667394d5:0xfbd7f625db380144",
+   "gps_coordinates": {
+    "latitude": 12.980158,
+    "longitude": 77.7335143
+   },
+   "rating": 4.9,
+   "reviews": 165,
+   "type": "Fertility clinic",
+   "types": [
+    "Fertility clinic"
+   ],
+   "address": "opposite SNS LUXURY HOMES, Pattandur Agrahara, Whitefield, Bengaluru, Karnataka 560066"
+  },
+  {
+   "position": 13,
+   "title": "Dr. Bharat P Sarkar | Best Spine, Back & Neck Pain Surgeon in Whitefield | Manipal Hospitals Whitefield",
+   "place_id": "ChIJE9UyTJwRrjsRJm0u8O2nWoQ",
+   "data_id": "0x3bae119c4c32d513:0x845aa7edf02e6d26",
+   "gps_coordinates": {
+    "latitude": 12.9881221,
+    "longitude": 77.728534
+   },
+   "rating": 4.9,
+   "reviews": 725,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Doctor",
+    "Private hospital",
+    "Specialized hospital"
+   ],
+   "address": "Manipal hospital Whitefield KR Puram Hobli, Off Hoodi Village, EPIP, Industrial Area, Whitefield, Bengaluru, Karnataka 560066"
+  },
+  {
+   "position": 14,
+   "title": "Svastha Hospital",
+   "place_id": "ChIJ9WAztx0RrjsRpQ7CP91EnlU",
+   "data_id": "0x3bae111db73360f5:0x559e44dd3fc20ea5",
+   "gps_coordinates": {
+    "latitude": 12.9660082,
+    "longitude": 77.7492376
+   },
+   "rating": 3.8,
+   "reviews": 2435,
+   "type": "Hospital",
+   "types": [
+    "Hospital"
+   ],
+   "address": "Site Number 3, Main Road, Narayanappa Garden, Whitefield, Bengaluru, Karnataka 560066"
+  },
+  {
+   "position": 15,
+   "title": "Dr Ramachandran - Spine, Spinal Neuro, and Scoliosis surgeon",
+   "place_id": "ChIJURdg4r4XrjsRCcEzj551Bk0",
+   "data_id": "0x3bae17bee2601751:0x4d06759e8f33c109",
+   "gps_coordinates": {
+    "latitude": 12.9886354,
+    "longitude": 77.7339228
+   },
+   "rating": 4.9,
+   "reviews": 100,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Neurosurgeon",
+    "Spine surgeon"
+   ],
+   "address": "Block B, Aster Whitefield Hospital Plot, 3 & 4, Sadaramangala Rd, opposite ITPL, Industrial Area, Whitefield, Bengaluru, Karnataka 560048"
+  },
+  {
+   "position": 16,
+   "title": "Manipal Hospital Varthur Road",
+   "place_id": "ChIJSxo6HfYNrjsRu4rk-Jxt-CQ",
+   "data_id": "0x3bae0df61d3a1a4b:0x24f86d9cf8e48abb",
+   "gps_coordinates": {
+    "latitude": 12.9581418,
+    "longitude": 77.7455758
+   },
+   "rating": 4.7,
+   "reviews": 25652,
+   "type": "Private hospital",
+   "types": [
+    "Private hospital"
+   ],
+   "address": "Survey No. 10P &, 12P, Whitefield Main Rd, Varthur Kodi, Palm Meadows, Ramagondanahalli, Whitefield, Bengaluru, Karnataka 560066"
+  },
+  {
+   "position": 17,
+   "title": "Dr. D. Harikishore Reddy | Best Orthopedic surgeon in Whitefield | Manipal Hospital Whitefield",
+   "place_id": "ChIJI4Vh8Z8RrjsRsfm9ikdiqwk",
+   "data_id": "0x3bae119ff1618523:0x9ab62478abdf9b1",
+   "gps_coordinates": {
+    "latitude": 12.988046599999999,
+    "longitude": 77.72872919999999
+   },
+   "rating": 5,
+   "reviews": 32,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon"
+   ],
+   "address": "Ground Floor, Manipal Hospital Whitefield #143, 212-215, EPIP, Hobli, Industrial Area, Hoodi Village, Krishnarajapuram, Bengaluru, Karnataka 560066"
+  },
+  {
+   "position": 18,
+   "title": "Sathya Sai Orthopaedic & Multispeciality Hospital",
+   "place_id": "ChIJBzg6u00QrjsR0ZZWJiHqmgM",
+   "data_id": "0x3bae104dbb3a3807:0x39aea21265696d1",
+   "gps_coordinates": {
+    "latitude": 13.0215649,
+    "longitude": 77.71286169999999
+   },
+   "rating": 4.7,
+   "reviews": 5800,
+   "type": "Hospital",
+   "types": [
+    "Hospital",
+    "Doctor"
+   ],
+   "address": "Old Madras Rd, next to RTO, Banashankari Layout, Bhattarahalli, Hosabasavanapura, Krishnarajapuram, Bengaluru, Karnataka 560049"
+  },
+  {
+   "position": 19,
+   "title": "MTB Orthopaedic Hospital",
+   "place_id": "ChIJq-gWMAsRrjsRmjCf06Jj95Y",
+   "data_id": "0x3bae110b3016e8ab:0x96f763a2d39f309a",
+   "gps_coordinates": {
+    "latitude": 12.9951289,
+    "longitude": 77.69540719999999
+   },
+   "rating": 4,
+   "reviews": 188,
+   "type": "Private hospital",
+   "types": [
+    "Private hospital"
+   ],
+   "address": "XMWW+36, Whitefield Main Rd, opposite Phoenix Market City, RHB Colony, Mahadevapura, Bengaluru, Karnataka 560048"
+  },
+  {
+   "position": 20,
+   "title": "TIRUMALA ORTHOPAEDIC AND PAEDIATRIC HOSPITAL",
+   "place_id": "ChIJM5vY1twRrjsRxtttrKZ2vbs",
+   "data_id": "0x3bae11dcd6d89b33:0xbbbd76a6ac6ddbc6",
+   "gps_coordinates": {
+    "latitude": 13.0105655,
+    "longitude": 77.70791559999999
+   },
+   "rating": 4.5,
+   "reviews": 891,
+   "type": "Orthopedic surgeon",
+   "types": [
+    "Orthopedic surgeon",
+    "Gastroenterologist",
+    "Obstetrician-gynecologist",
+    "Medical Center",
+    "Orthopedic clinic",
+    "ENT Specialist",
+    "Pediatrician",
+    "Physiotherapy Center",
+    "Plastic surgeon",
+    "Urologist"
+   ],
+   "address": "73,20th cross,2nd stage Gayathri layout, Basavanapura Main Rd, Krishnarajapuram, Bengaluru, Karnataka 560036"
+  }
+ ]
+}

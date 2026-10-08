@@ -35,7 +35,7 @@ web/ (vanilla JS, no build) ── EventSource SSE ──► FastAPI app/main.py
 - Google ★ and review count: context only. No composite score, no ranking.
 
 ## 6. Credits
-1 + 3 × 2 = 7 per comparison (budget enforced). Project: probe 5 · dev 9 · 4 recorded comparisons 21 → 35 used.
+1 + 3 × 2 = 7 per comparison (budget enforced; hourly cap 30, daily cap 60). Project total: 36 credits (probe 5, dev/iterations ~10, four recorded comparisons incl. re-selection after fixes ~21).
 
 ## 7. Tests / verification
 Offline pytest suite (no network, no keys); 4 real comparisons dumped to `results/`; independent web verification and code/security review agents; Playwright screenshots (desktop light/dark, mobile; fail on console errors / overflow).

@@ -144,5 +144,12 @@ _POSITIVE = re.compile(r"good experience|satisfied|thank|excellent|great (?:job|
 
 
 def sounds_positive(text: str) -> bool:
-    """For the no-LLM fallback: a low-star review that only praises ("full satisfied, thank you all")."""
-    return bool(_POSITIVE.search(text or ""))
+    """For the no-LLM fallback: a low-star review that only praises ("full satisfied, thank you all").
+    Negated praise ("Not satisfied", "would not recommend") is not praise."""
+    t = text or ""
+    for m in _POSITIVE.finditer(t):
+        before = t[max(0, m.start() - 25):m.start()].lower().split()[-2:]
+        if not any(w in ("not", "never", "no", "nothing", "dont", "don't", "didn't", "wouldn't", "won't")
+                   for w in before):
+            return True
+    return False

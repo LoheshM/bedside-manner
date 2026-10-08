@@ -258,7 +258,7 @@ def _card(h: Hospital, low: list[dict[str, Any]], new: list[dict[str, Any]], lab
             seen[r["id"]] = r
     crit = list(seen.values())
     # The lowest-first list holds every 1–2★ match once it reaches a ≥3★ review (or ends before 20).
-    complete = len(lv) < PAGE or any(not r["critical"] for r in lv)
+    complete = bool(lv) and (len(lv) < PAGE or any(not r["critical"] for r in lv))  # failed slice ≠ complete
     recent_proc = [r for r in crit if r["recent"] and r["scope"] == "procedure_or_admission"]
     recent_any = [r for r in crit if r["recent"]]
     newest_dates = [r["date"] for r in nv if r["date"]]

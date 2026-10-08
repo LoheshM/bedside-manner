@@ -32,7 +32,7 @@ People choose a hospital for a planned procedure by its Google stars. Those star
 
 **It never rates, ranks or recommends a hospital.** Google's star rating is shown only as context. A low-star review that raises no problem is not counted as a complaint. If Google's review filter returns nothing, the app says **"unknown"**, not "no complaints".
 
-![Cataract surgery in Chennai](docs/screenshots/cataract-killer.png)
+![Dialysis in Hyderabad: replies to complaints, and an honest “unknown”](docs/screenshots/dialysis-killer.png)
 
 ## How it works
 
@@ -70,7 +70,18 @@ Each comparison costs 1 + 3 × 2 = **7 credits**, and results are cached for a w
 
 ## Verified against the web
 
-<!-- VERIFIED_TABLE -->
+Four comparisons were run on live data. An independent agent then fact-checked them on the web and sampled the LLM labels. The full log, and the 16 bugs that verification, review and testing found, are in [docs/VERIFICATION.md](docs/VERIFICATION.md).
+
+| Comparison | Hospitals (Google ★) | Recent procedure complaints* | Checked | |
+|---|---|---|---|---|
+| Childbirth · Koramangala, Bengaluru | Motherhood Sarjapur 4.6 · Cloudnine Jayanagar 4.7 · Apollo Cradle 4.7 | ≥8 · ≥8 · ≥3, mostly billing and staff behaviour; replies 20/21 · 21/22 · 19/19 | Real maternity hospitals; ratings confirmed; excerpt dates match the text | ✅ |
+| Cataract · Chennai | Dr Agarwals 4.9 · Satish 5.0 · The Eye Foundation 4.9 | 1 · 1 · 0 | Dr Agarwals was wrongly skipped as a "doctor listing" in the first run (fixed). A 2★ review that is praise is not counted | ✅ after fix |
+| Dialysis · Hyderabad | AINU 4.8 · SAP Kidney Center 4.7 · Sathya Kidney Centre 4.4 | 1 · 2 · 0. AINU's newest-first search came back empty, shown as **unknown** | AINU rating consistent with an aggregator; hospital selection fixed | ✅ after fix |
+| Knee replacement · Whitefield, Bengaluru | Manipal 4.7 · Svastha 3.8 · Medicover 5.0 | 0 · 0 · 0 (Manipal's 4 older complaints from 2022 were all replied to) | Doctors' SEO listings correctly skipped; Medicover kept despite Google typing it "clinic" | ✅ |
+| Name redaction | — | "[name]" in excerpts | Two lowercase names leaked in the first run (fixed); rescan of every shown excerpt is clean | ✅ after fix |
+| LLM labels (24 sampled) | — | scope + themes | ~12% clear errors (e.g. an OPD complaint labelled as about the procedure) | ⚠️ |
+
+\*1–2★ reviews that raise a problem, about the procedure or the stay, posted in the 24 months before the data was fetched. "≥" means Google's 20-review page was full of 1–2★ reviews.
 
 ## Quick start
 
@@ -102,7 +113,8 @@ GEMINI_API_KEY=...    # https://aistudio.google.com/apikey (optional; without it
 - **One keyword, at most 20 reviews per sort.** "delivery" also catches OPD and report-delivery complaints; the LLM's "about the procedure or stay" label separates those, but it can be wrong. Spot-check the excerpts, which link to Google.
 - **Google's keyword filter is a black box.** It sometimes returns nothing (shown as unknown), and newest-first and lowest-first can disagree.
 - **Coverage:** the three most-reviewed hospitals in Google's top 20 Maps results. Smaller or newer hospitals, and doctors' own listings, aren't compared.
-- **Redaction is rule-based** and can miss a name written in an unusual way.
+- **Redaction is rule-based** and can miss a name written in an unusual way (e.g. the second name in "checked by Priya and Kumar").
+- **LLM labels are imperfect:** about 12% of sampled labels were clearly wrong (mostly OPD vs procedure scope). Counts by theme are indicative; the excerpts link to the source.
 
 ## AI tools disclosure
 

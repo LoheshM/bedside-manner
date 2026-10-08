@@ -19,7 +19,7 @@ NOT_A_HOSPITAL = re.compile(r"clinic\b|polyclinic|pharmacy|diagnostic|laborator|
                             re.IGNORECASE)
 # A doctor's own listing: titled "Dr …" AND carrying a doctor marker. "Dr Agarwals Eye Hospital" and
 # "Dr Parthasarathy Memorial Eye Care Hospital" are hospital groups named after a founder — keep those.
-DOCTOR_NAME = re.compile(r"(?:^|\W)(?:dr\.?|doctor)\s", re.IGNORECASE)
+DOCTOR_NAME = re.compile(r"(?:^|\W)(?:dr\.?|doctor)(?:\s|\.)|^\s*dr\b", re.IGNORECASE)  # also "DR.HARSHA.GN"
 DOCTOR_MARKER = re.compile(r"\||\b(?:surgeon|specialist|consultant|physician|orthopa?edic(?:ian)?|gyna?ecologist|"
                            r"obstetrician|urologist|nephrologist|cardiologist|ophthalmologist|oncologist|"
                            r"pediatrician|paediatrician|mbbs|m\.?s\.?|m\.?d\.?|dnb|frcs)\b", re.IGNORECASE)

@@ -36,7 +36,7 @@ Each round: **Idea → Strongest objection → Answer / change.** Evidence: two 
 **Answer.** Code computes every number (how many of the 20 lowest are 1–2★, how many in 24 months, theme counts). The LLM returns only labels per review id (strict JSON schema, enumerated themes, ≤ 12-word reason) — the input reviews are untrusted data. Without an LLM, keyword rules label themes (billing/insurance, waiting, staff/nursing, communication, outcome/complication, hygiene, discharge/admin, emergency).
 
 ## Round 8 — credits
-**Answer.** Per check: 1 Maps search + 3 hospitals × 1 review call (+ ≤ 1 fallback each) = **4–7 credits**; cached 72 h, so re-checks and a different procedure in the same area re-use the Maps call. Probe 5 + dev ~8 + verification ~20 + reserve.
+**Answer.** Per check: 1 Maps search + 3 hospitals × 2 review calls (lowest-first and newest-first, same keyword) = **7 credits**, enforced as a per-check budget; results cached for a week, plus a server-wide hourly (30) and daily (60) cap. (An earlier draft had a per-hospital keyword ladder; dropped in Round 11.)
 
 ## Round 9 — the killer screen
 **Answer.** A **theme grid**: rows = 3 hospitals (with Google ★ and review count), columns = complaint themes, cells = number of 1–2★ procedure reviews in the last 24 months; click a cell → the dated quotes. Above it: *"Manipal: 5 of its 20 lowest-rated knee reviews are complaints, newest Oct 2022 · Aster: 20 of 20, 9 since 2025 — mostly insurance/billing and in-patient care."*

@@ -103,7 +103,7 @@ GEMINI_API_KEY=...    # https://aistudio.google.com/apikey (optional; without it
 ```
 
 - **Command line:** `uv run python -m scripts.check delivery Koramangala Bengaluru`
-- **Tests:** `uv run pytest -q` (offline: respx blocks the network and keys are removed)
+- **Tests:** `uv run pytest -q` (772 offline tests: respx blocks the network and keys are removed)
 - **Lint:** `uv run ruff check`
 - **Secret scan:** `uv run python -m scripts.secret_scan`
 

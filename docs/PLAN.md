@@ -28,8 +28,8 @@ web/ (vanilla JS, no build) ── EventSource SSE ──► FastAPI app/main.py
 ```
 
 ## 5. Metrics (per hospital, all from the two calls)
-- **Recent procedure complaints:** 1–2★ reviews in the lowest-first list, posted in the last 24 months, labelled about the procedure/stay. Exact if the list reaches a ≥3★ review or ends before 20; otherwise shown as "≥N".
-- **Complaints replied to:** of the 1–2★ reviews in the lowest-first list, how many carry an owner response.
+- **Recent procedure complaints:** 1–2★ reviews that raise a problem, from both lists (de-duplicated), posted in the 24 months before the data was fetched, labelled about the procedure/stay. Exact if the lowest-first list reaches a ≥3★ review or ends before 20; otherwise shown as "≥N".
+- **Complaints replied to:** of the complaints read, how many carry an owner response.
 - **Newest snapshot:** k of the newest ≤20 matching reviews are 1–2★, and the dates they span.
 - **Unknown, not zero:** a slice that Google's filter returns empty is labelled unknown.
 - Google ★ and review count: context only. No composite score, no ranking.

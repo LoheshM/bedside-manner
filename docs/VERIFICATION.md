@@ -42,3 +42,14 @@ Counts are complaints about the procedure or the stay in the last 24 months. "�
 | Code review | No daily credit cap; failed searches used up cap slots; uncached status calls | Daily cap of 60, slots released on failure, status cached for 5 minutes |
 | Test suite | A failed lowest-first search marked the card "complete" and showed "no complaint" as fact | `complete` requires reviews |
 | Test suite | "Not satisfied" counted as praise without an LLM | Negation-aware rule |
+
+## Stress test for the demo (9 Oct 2026, 14 credits)
+
+Two more live comparisons, looking for a stronger demo case than Koramangala:
+
+| Comparison | What came back | Used as an example? |
+|---|---|---|
+| Childbirth · Banjara Hills, Hyderabad | Rainbow Children's Hospital (4.7★ / 27,825; ≥4 recent delivery complaints, mostly staff), a CARE outpatient centre (4.6★) and TX Hospitals (4.8★); only 7–11 matching reviews at the latter two | No: two picks aren't maternity hospitals, and the data is thin |
+| Childbirth · Andheri, Mumbai | Holy Spirit Hospital (4.2★ / 2,798), Carewel (4.7★ / 275), SM Maternity & Nursing Home (4.8★ / 200), with 1, 2 and 0 recent complaints | No: small nursing homes; no like-for-like contrast |
+
+**Conclusion:** Koramangala stays the hero case. It is the only one with three large hospitals (7.6k–11k reviews) at near-identical stars (4.6–4.7) and clearly different recent, procedure-specific stories. The app behaved correctly on the weaker cases: small places are compared honestly, and thin data shows small counts rather than inflated ones. Event dumps: `results/delivery_hyderabad.json`, `results/delivery_andheri.json`.

@@ -30,6 +30,8 @@ People choose a hospital for a planned procedure by its Google stars. Those star
 | **Theme grid** | Hospitals against themes: billing, insurance, waiting, staff, doctor communication, outcome, discharge, cleanliness, emergency. |
 | **Live search trail** | Every SerpApi call with its engine, purpose and time, marked "live · 1 credit" or "cached · free". |
 
+**The interface is a patient chart on a clipboard.** Each hospital is a chart column of "vitals" with handwritten margin notes computed from the counts ("mostly billing & estimates", "replied to every one we read"). Complaint themes are colour-coded chart tabs, and the questions form a tickable pre-admission checklist. Motion is light CSS/SVG: an ECG trace, and paper slips for the quotes.
+
 **It never rates, ranks or recommends a hospital.** Google's star rating is shown only as context. A low-star review that raises no problem is not counted as a complaint. If Google's review filter returns nothing, the app says **"unknown"**, not "no complaints".
 
 ![Dialysis in Hyderabad: replies to complaints, and an honest “unknown”](docs/screenshots/dialysis-killer.png)

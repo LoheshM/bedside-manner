@@ -29,7 +29,7 @@
     "gl": "in"
    },
    "source": "cache",
-   "ms": 0,
+   "ms": 10,
    "ok": true,
    "error": null,
    "result_count": 20,
@@ -178,7 +178,7 @@
     "num": 20
    },
    "source": "cache",
-   "ms": 0,
+   "ms": 9,
    "ok": true,
    "error": null,
    "result_count": 20,
@@ -198,7 +198,7 @@
     "num": 20
    },
    "source": "cache",
-   "ms": 1,
+   "ms": 9,
    "ok": true,
    "error": null,
    "result_count": 20,
@@ -218,7 +218,7 @@
     "num": 20
    },
    "source": "cache",
-   "ms": 0,
+   "ms": 9,
    "ok": true,
    "error": null,
    "result_count": 20,
@@ -238,7 +238,7 @@
     "num": 20
    },
    "source": "cache",
-   "ms": 0,
+   "ms": 9,
    "ok": true,
    "error": null,
    "result_count": 20,
@@ -258,7 +258,7 @@
     "num": 20
    },
    "source": "cache",
-   "ms": 0,
+   "ms": 8,
    "ok": true,
    "error": null,
    "result_count": 20,
@@ -278,7 +278,7 @@
     "num": 20
    },
    "source": "cache",
-   "ms": 0,
+   "ms": 7,
    "ok": true,
    "error": null,
    "result_count": 20,
@@ -880,14 +880,14 @@
    "as_of": "2026-10-08",
    "credits_spent": 0,
    "searches": 7,
-   "ms": 44
+   "ms": 120
   }
  },
  {
   "event": "done",
   "data": {
    "credits_spent": 0,
-   "ms": 44
+   "ms": 120
   }
  }
 ]

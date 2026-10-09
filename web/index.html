@@ -5,32 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bedside Manner — what patients of your procedure said</title>
   <meta name="description" content="Compare hospitals near you by what patients who had your procedure complained about — dated, sourced Google reviews, before you're admitted.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234338ca'/%3E%3Cpath d='M9 18v-7h3v4h8a3 3 0 0 1 3 3v3h-2v-2H11v2H9z' fill='%23fff'/%3E%3Ccircle cx='14' cy='12' r='1.8' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='4' width='22' height='26' rx='3' fill='%23a8743f'/%3E%3Crect x='8' y='8' width='16' height='19' rx='1' fill='%23fbfaf5'/%3E%3Crect x='12' y='2' width='8' height='5' rx='1.5' fill='%2394a3b8'/%3E%3Cpath d='M9 18h4l1.5-4 2.5 8 2-4h4' stroke='%231e4fd8' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-  <header class="top">
-    <a class="logo" href="/" aria-label="Bedside Manner home">
-      <span class="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 17v-8h2.5v4.5H18a3 3 0 0 1 3 3V20h-2.2v-1.8H5.2V20H3z"/><circle cx="9" cy="10.2" r="2" fill="currentColor"/></svg>
-      </span>
-      <span>Bedside <b>Manner</b></span>
-    </a>
-    <div class="top-right">
-      <span id="mode" class="pill">…</span>
-      <button id="theme" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+  <header class="board">
+    <div class="board-inner">
+      <a class="logo" href="/" aria-label="Bedside Manner home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 13h4l2-5 3 10 2.5-6 1.5 1H21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span>Bedside <b>Manner</b></span>
+      </a>
+      <div class="clip" aria-hidden="true"><span class="clip-ring"></span></div>
+      <div class="top-right">
+        <span id="mode" class="pill">…</span>
+        <button id="theme" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+      </div>
     </div>
   </header>
 
-  <main>
+  <main class="sheet">
     <section class="hero">
-      <p class="eyebrow">Travel &amp; local discovery · India</p>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Patient-reported chart · Travel &amp; local discovery · India</p>
       <h1>Same 4.7★.<br><span>Different stories.</span></h1>
-      <p class="lede">Choosing a hospital for a delivery, a knee replacement or dialysis? Star ratings blur thousands of OPD visits together. Bedside Manner reads the Google reviews that mention <em>your procedure</em> at the hospitals near you — the lowest-rated first, and the newest — and shows what patients complained about, when, and whether the hospital replied.</p>
+      <svg class="ecg" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true">
+        <path class="ecg-base" d="M0 32 H120 l10 -4 l8 4 H200 l8 -22 l10 40 l10 -30 l6 12 H330 l10 -4 l8 4 H420 l8 -22 l10 40 l10 -30 l6 12 H600"/>
+        <path class="ecg-line" d="M0 32 H120 l10 -4 l8 4 H200 l8 -22 l10 40 l10 -30 l6 12 H330 l10 -4 l8 4 H420 l8 -22 l10 40 l10 -30 l6 12 H600"/>
+      </svg>
+      <p class="lede">Choosing a hospital for a delivery, a knee replacement or dialysis? Star ratings blur thousands of OPD visits together. Bedside Manner reads the Google reviews that mention <em>your procedure</em> at the hospitals near you — the lowest-rated first, then the newest — and charts what patients complained about, when, and whether the hospital replied.</p>
 
-      <form id="form" class="ask" autocomplete="off">
+      <form id="form" class="intake" autocomplete="off">
+        <div class="intake-title"><span>Admission enquiry</span><span class="hand">fill in &amp; compare</span></div>
         <label class="field">
           <span>Procedure</span>
           <select id="procedure" required></select>
@@ -45,12 +53,19 @@
         </label>
         <button id="go" type="submit" class="btn">Compare hospitals</button>
       </form>
-      <div id="examples" class="chips" aria-label="Examples"></div>
+      <div class="files">
+        <span class="files-label">Recent charts</span>
+        <div id="examples" class="chips" aria-label="Examples"></div>
+      </div>
       <p class="disclaimer">Reviews are individual experiences, not medical evidence. Talk to your doctor, ask the hospital for a written estimate and your insurer for cashless approval before admission.</p>
     </section>
 
-    <section id="live" class="live hidden" aria-live="polite">
-      <div class="trail-head"><h2>Live search trail</h2><span id="trail-meta" class="muted"></span></div>
+    <section id="live" class="notes hidden" aria-live="polite">
+      <div class="trail-head">
+        <h2>Case notes <span class="hand">— what we looked up</span></h2>
+        <span id="trail-meta" class="muted"></span>
+      </div>
+      <svg class="pulse" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12 H90 l6 -8 l6 16 l6 -12 l4 4 H190 l6 -8 l6 16 l6 -12 l4 4 H300"/></svg>
       <ol id="trail" class="trail"></ol>
       <div id="notices"></div>
     </section>
@@ -60,7 +75,7 @@
 
   <footer class="foot">
     <p><b>Bedside Manner</b> never rates or ranks a hospital. It counts and quotes public Google reviews (names of doctors and staff removed) so you can ask better questions. In an emergency, go to the nearest hospital — don't compare.</p>
-    <p class="muted">Search data via SerpApi (Google Maps, Google Maps Reviews) · complaint themes labelled by Gemini 2.5 Flash, counted by code · MIT licence</p>
+    <p class="muted">Search data via SerpApi (Google Maps, Google Maps Reviews) · complaint themes labelled by an LLM, counted by code · MIT licence</p>
   </footer>
   <script src="/static/app.js"></script>
 </body>

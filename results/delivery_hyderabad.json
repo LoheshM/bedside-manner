@@ -1,0 +1,697 @@
+[
+ {
+  "event": "start",
+  "data": {
+   "procedure": "Childbirth (normal / C-section)",
+   "place": "Banjara Hills, Hyderabad",
+   "keyword": "delivery",
+   "mode": "auto"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "find",
+   "label": "Finding hospitals for childbirth (normal / c-section) near Banjara Hills, Hyderabad",
+   "status": "running"
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps",
+   "purpose": "Hospitals for “Childbirth (normal / C-section)” near Banjara Hills, Hyderabad",
+   "params": {
+    "type": "search",
+    "q": "maternity hospital in Banjara Hills, Hyderabad",
+    "ll": "@17.385,78.4867,12z",
+    "hl": "en",
+    "gl": "in"
+   },
+   "source": "live",
+   "ms": 1146,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": true
+  }
+ },
+ {
+  "event": "hospitals",
+  "data": {
+   "hospitals": [
+    {
+     "title": "Rainbow Children’s Hospital - Best Pediatric Hospital in Banjara Hills, Hyderabad",
+     "data_id": "0x3bcb90cab4aa6a93:0x4c1e7b85d3f3c95a",
+     "place_id": "ChIJk2qqtMqQyzsRWsnz04V7Hkw",
+     "rating": 4.7,
+     "reviews": 27825,
+     "type": "Children's hospital",
+     "address": "Road No. 2, near Hotel Park Hyatt, Sri Nagar Colony, Kamalapuri Colony, Banjara Hills, Hyderabad, Telangana 500034",
+     "lat": 17.424940499999998,
+     "lng": 78.43206219999999,
+     "km": null
+    },
+    {
+     "title": "Care Hospital Outpatient Centre BanjaraHills",
+     "data_id": "0x3bcb9730a996204d:0xb363d9d7937ee566",
+     "place_id": "ChIJTSCWqTCXyzsRZuV-k9fZY7M",
+     "rating": 4.6,
+     "reviews": 8300,
+     "type": "Hospital",
+     "address": "CARE Hospitals Outpatient Centre, BabuKhan Chambers, Road No. 10, Avenue 4, Banjara Hills, Hyderabad, Telangana 500034",
+     "lat": 17.4142629,
+     "lng": 78.4464917,
+     "km": null
+    },
+    {
+     "title": "TX Hospitals Banjara Hills",
+     "data_id": "0x3bcb97fe77c0cf9d:0xfee82fa44d76adad",
+     "place_id": "ChIJnc_Ad_6XyzsRra12TaQv6P4",
+     "rating": 4.8,
+     "reviews": 8073,
+     "type": "Hospital",
+     "address": "Building, Road no:12, Raichandani Construction, Sri Ram Nagar Colony, Banjara Hills, Hyderabad, Telangana 500028",
+     "lat": 17.4077701,
+     "lng": 78.4446554,
+     "km": null
+    }
+   ],
+   "skipped": [
+    {
+     "title": "Motherhood Hospital",
+     "why": "only 38 reviews"
+    },
+    {
+     "title": "Best Obstetrician - Gynecologist, Maternity and Women's specialist in Banjara Hills || Hig",
+     "why": "Women's health clinic listing"
+    },
+    {
+     "title": "TX Hospitals Banjara Hills : Gynaecology Hospitals in Banjara Hills, Hyderabad | High Risk",
+     "why": "only 0 reviews"
+    },
+    {
+     "title": "Dr. Samatha Kumar | Obstetrician & Gynecologist, High-Risk Pregnancy Specialist in Banjara",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Kranthi Shilpa | Top Gynecologist Obstetricians Banjara Hills, Hyderabad | CARE Hospit",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Precise Hospital | Multi speciality Surgical Center | Banjara Hills, Hyderabad",
+     "why": "only 47 reviews"
+    },
+    {
+     "title": "Dr Tulika Tayal - Best Fetal Medicine Doctor/Hyderabad",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Sudha Hospital",
+     "why": "only 29 reviews"
+    },
+    {
+     "title": "CARE Hospitals Banjara Hills",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Cloudnine Hospitals - Banjara Hills (The Birthplace) | Best Maternity & Pregnancy Centre",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Ankura Hospital for Women & Children",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Apollo Cradle & Children's Hospital in Jubilee Hills, Hyderabad",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Fernandez Hospital - Banjara Hills Stork Home (Unit 5)",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Tanvir Hospital",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Nirmala Hospital",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "BirthRight Maternity by Rainbow Hospitals, Banjara Hills, Hyderabad",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Nisa Hospital",
+     "why": "fewer reviews than the top 3"
+    }
+   ]
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "find",
+   "label": "Comparing the 3 most-reviewed hospitals · 17 other places skipped (doctors' own listings, clinics, small places, extra branches, fewer reviews)",
+   "status": "done"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "reviews",
+   "label": "Reading reviews that mention “delivery”: lowest-rated first, and newest first",
+   "status": "running"
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Newest “delivery” reviews · Care Hospital Outpatient Centre BanjaraH",
+   "params": {
+    "data_id": "0x3bcb9730a996204d:0xb363d9d7937ee566",
+    "query": "delivery",
+    "sort_by": "newestFirst",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "live",
+   "ms": 879,
+   "ok": true,
+   "error": null,
+   "result_count": 11,
+   "credit": true
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Newest “delivery” reviews · TX Hospitals Banjara Hills",
+   "params": {
+    "data_id": "0x3bcb97fe77c0cf9d:0xfee82fa44d76adad",
+    "query": "delivery",
+    "sort_by": "newestFirst",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "live",
+   "ms": 903,
+   "ok": true,
+   "error": null,
+   "result_count": 7,
+   "credit": true
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Newest “delivery” reviews · Rainbow Children’s Hospital",
+   "params": {
+    "data_id": "0x3bcb90cab4aa6a93:0x4c1e7b85d3f3c95a",
+    "query": "delivery",
+    "sort_by": "newestFirst",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "live",
+   "ms": 1134,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": true
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Lowest-rated “delivery” reviews · Rainbow Children’s Hospital",
+   "params": {
+    "data_id": "0x3bcb90cab4aa6a93:0x4c1e7b85d3f3c95a",
+    "query": "delivery",
+    "sort_by": "ratingLow",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "live",
+   "ms": 1191,
+   "ok": true,
+   "error": null,
+   "result_count": 20,
+   "credit": true
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Lowest-rated “delivery” reviews · Care Hospital Outpatient Centre BanjaraH",
+   "params": {
+    "data_id": "0x3bcb9730a996204d:0xb363d9d7937ee566",
+    "query": "delivery",
+    "sort_by": "ratingLow",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "live",
+   "ms": 1292,
+   "ok": true,
+   "error": null,
+   "result_count": 11,
+   "credit": true
+  }
+ },
+ {
+  "event": "serp_call",
+  "data": {
+   "engine": "google_maps_reviews",
+   "purpose": "Lowest-rated “delivery” reviews · TX Hospitals Banjara Hills",
+   "params": {
+    "data_id": "0x3bcb97fe77c0cf9d:0xfee82fa44d76adad",
+    "query": "delivery",
+    "sort_by": "ratingLow",
+    "hl": "en",
+    "num": 20
+   },
+   "source": "live",
+   "ms": 2262,
+   "ok": true,
+   "error": null,
+   "result_count": 7,
+   "credit": true
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "reviews",
+   "label": "Read Rainbow Children’s Hospital: 20 + 20 · Care Hospital Outpatient Centre BanjaraH: 11 + 11 · TX Hospitals Banjara Hills: 7 + 7",
+   "status": "done"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "label",
+   "label": "Reading what each low-rated review is about",
+   "status": "running"
+  }
+ },
+ {
+  "event": "step",
+  "data": {
+   "id": "label",
+   "label": "24 low-rated reviews labelled by gemini-2.5-flash (24 labels; every count is computed by code)",
+   "status": "done"
+  }
+ },
+ {
+  "event": "result",
+  "data": {
+   "procedure": "Childbirth (normal / C-section)",
+   "procedure_id": "delivery",
+   "keyword": "delivery",
+   "place": "Banjara Hills, Hyderabad",
+   "city": "Hyderabad",
+   "hospitals": [
+    {
+     "title": "Rainbow Children’s Hospital - Best Pediatric Hospital in Banjara Hills, Hyderabad",
+     "data_id": "0x3bcb90cab4aa6a93:0x4c1e7b85d3f3c95a",
+     "place_id": "ChIJk2qqtMqQyzsRWsnz04V7Hkw",
+     "rating": 4.7,
+     "reviews": 27825,
+     "type": "Children's hospital",
+     "address": "Road No. 2, near Hotel Park Hyatt, Sri Nagar Colony, Kamalapuri Colony, Banjara Hills, Hyderabad, Telangana 500034",
+     "lat": 17.424940499999998,
+     "lng": 78.43206219999999,
+     "km": null,
+     "status": "ok",
+     "low_read": 20,
+     "complete": false,
+     "low_status": "ok",
+     "new_status": "ok",
+     "complaints": 21,
+     "complaints_recent": 5,
+     "complaints_recent_procedure": 4,
+     "newest_complaint": "2026-09-14",
+     "replied": 12,
+     "new_read": 20,
+     "new_critical": 1,
+     "low_stars_no_issue": 0,
+     "new_span": [
+      "2026-08-25",
+      "2026-10-03"
+     ],
+     "themes": {
+      "billing": 0,
+      "insurance": 0,
+      "waiting": 0,
+      "staff": 4,
+      "doctor": 2,
+      "outcome": 1,
+      "discharge": 0,
+      "hygiene": 0,
+      "emergency": 0
+     },
+     "excerpts": [
+      {
+       "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCMWExWmpabEZNTmxoeldHcG9lamRuT0dKME5GRRAB",
+       "stars": 1.0,
+       "critical": true,
+       "complaint": true,
+       "date": "2026-09-14",
+       "edited": "2026-10-04",
+       "recent": true,
+       "excerpt": "I had a very disappointing experience at Rainbow Hospitals, Banjara Hills, especially when it came to the care, coordination, supervision, and guidance provided to the mother and newborn after delivery. The hospital has a big name and seemingly has all the facilities and departments required, but …",
+       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCMWExWmpabEZNTmxoeldHcG9lamRuT0dKME5GRRAB!2m1!1s0x0:0x4c1e7b85d3f3c95a!3m1!1s2@1:CAIQACodChtycF9oOjB1a1ZjZlFMNlhzWGpoejdnOGJ0NFE%7C%7C?hl=en",
+       "themes": [
+        "staff"
+       ],
+       "scope": "procedure_or_admission",
+       "replied": false,
+       "label_by": "llm"
+      },
+      {
+       "id": "Ci9DQUlRQUNvZENodHljRjlvT25kUlVWQkJkSEZ2ZW5rNWRqUnVhazExWVhOdWMzYxAB",
+       "stars": 1.0,
+       "critical": true,
+       "complaint": true,
+       "date": "2026-01-31",
+       "edited": null,
+       "recent": true,
+       "excerpt": "WORST HOSPITAL EVER!!! I am writing to express my deep disappointment and concern regarding the recent experience my wife and I had at your hospital during her delivery and the subsequent postnatal care. …",
+       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kUlVWQkJkSEZ2ZW5rNWRqUnVhazExWVhOdWMzYxAB!2m1!1s0x0:0x4c1e7b85d3f3c95a!3m1!1s2@1:CAIQACodChtycF9oOndRUVBBdHFvenk5djRuak11YXNuc3c%7C%7C?hl=en",
+       "themes": [
+        "staff"
+       ],
+       "scope": "procedure_or_admission",
+       "replied": true,
+       "label_by": "llm"
+      },
+      {
+       "id": "Ci9DQUlRQUNvZENodHljRjlvT21acldEZGxaRTgwTFRKSFozSkJjbXhJVjNKSU9FRRAB",
+       "stars": 1.0,
+       "critical": true,
+       "complaint": true,
+       "date": "2025-10-20",
+       "edited": null,
+       "recent": true,
+       "excerpt": "HORRIBLE EXPERIENCE...WHAT WAS SUPPOSED TO BE AN UNEVENTFUL DELIVERY,TURNED OUT TO BE NIGHTMARE FOR BOTH MOTHER AND THE BABY.. Our experience at Rainbow Hospitals, Banjara Hills, was devastating. …",
+       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21acldEZGxaRTgwTFRKSFozSkJjbXhJVjNKSU9FRRAB!2m1!1s0x0:0x4c1e7b85d3f3c95a!3m1!1s2@1:CAIQACodChtycF9oOmZrWDdlZE80LTJHZ3JBcmxIV3JIOEE%7C%7C?hl=en",
+       "themes": [
+        "doctor",
+        "staff",
+        "outcome"
+       ],
+       "scope": "procedure_or_admission",
+       "replied": true,
+       "label_by": "llm"
+      },
+      {
+       "id": "ChdDSUhNMG9nS0VJQ0FnTUR3aXJ6Wm1nRRAB",
+       "stars": 1.0,
+       "critical": true,
+       "complaint": true,
+       "date": "2025-03-25",
+       "edited": "2025-08-12",
+       "recent": true,
+       "excerpt": "Very Very WORST hospital birth right by RAINBOW.. They are completely commercial least concerned about patient and baby delivery process.. …",
+       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUR3aXJ6Wm1nRRAB!2m1!1s0x0:0x4c1e7b85d3f3c95a!3m1!1s2@1:CIHM0ogKEICAgMDwirzZmgE%7C%7C?hl=en",
+       "themes": [
+        "staff",
+        "doctor"
+       ],
+       "scope": "procedure_or_admission",
+       "replied": true,
+       "label_by": "llm"
+      },
+      {
+       "id": "Ci9DQUlRQUNvZENodHljRjlvT25kdVFsRnJkRU5oZUdkSVdYcGZUM2xWT0RkcVNIYxAB",
+       "stars": 1.0,
+       "critical": true,
+       "complaint": true,
+       "date": "2026-06-05",
+       "edited": null,
+       "recent": true,
+       "excerpt": "You can't run hospital just with good docs you need good staff also Recently shifted from Bangalore I came to check if I can have delivery here unfortunately staff are robots So it's big no Maybe you have made good brand but you guys are worst I can't trust these people with my wife and baby Never",
+       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kdVFsRnJkRU5oZUdkSVdYcGZUM2xWT0RkcVNIYxAB!2m1!1s0x0:0x4c1e7b85d3f3c95a!3m1!1s2@1:CAIQACodChtycF9oOnduQlFrdENheGdIWXpfT3lVODdqSHc%7C%7C?hl=en",
+       "themes": [
+        "staff"
+       ],
+       "scope": "opd_or_consultation",
+       "replied": true,
+       "label_by": "llm"
+      }
+     ]
+    },
+    {
+     "title": "Care Hospital Outpatient Centre BanjaraHills",
+     "data_id": "0x3bcb9730a996204d:0xb363d9d7937ee566",
+     "place_id": "ChIJTSCWqTCXyzsRZuV-k9fZY7M",
+     "rating": 4.6,
+     "reviews": 8300,
+     "type": "Hospital",
+     "address": "CARE Hospitals Outpatient Centre, BabuKhan Chambers, Road No. 10, Avenue 4, Banjara Hills, Hyderabad, Telangana 500034",
+     "lat": 17.4142629,
+     "lng": 78.4464917,
+     "km": null,
+     "status": "ok",
+     "low_read": 11,
+     "complete": true,
+     "low_status": "ok",
+     "new_status": "ok",
+     "complaints": 2,
+     "complaints_recent": 1,
+     "complaints_recent_procedure": 1,
+     "newest_complaint": "2025-05-10",
+     "replied": 1,
+     "new_read": 11,
+     "new_critical": 2,
+     "low_stars_no_issue": 0,
+     "new_span": [
+      "2021-02-25",
+      "2025-05-10"
+     ],
+     "themes": {
+      "billing": 0,
+      "insurance": 0,
+      "waiting": 0,
+      "staff": 0,
+      "doctor": 1,
+      "outcome": 0,
+      "discharge": 0,
+      "hygiene": 0,
+      "emergency": 0
+     },
+     "excerpts": [
+      {
+       "id": "ChZDSUhNMG9nS0VOem5qSU9mNzctTUZ3EAE",
+       "stars": 1.0,
+       "critical": true,
+       "complaint": true,
+       "date": "2025-05-10",
+       "edited": null,
+       "recent": true,
+       "excerpt": "Dr [name] nature is Very Pathetic and rude behaviour.. She didn't try to convince or explain things that've doubt in patient mind also she is egotist. …",
+       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VOem5qSU9mNzctTUZ3EAE!2m1!1s0x0:0xb363d9d7937ee566!3m1!1s2@1:CIHM0ogKENznjIOf77-MFw%7C%7C?hl=en",
+       "themes": [
+        "doctor"
+       ],
+       "scope": "procedure_or_admission",
+       "replied": true,
+       "label_by": "llm"
+      }
+     ]
+    },
+    {
+     "title": "TX Hospitals Banjara Hills",
+     "data_id": "0x3bcb97fe77c0cf9d:0xfee82fa44d76adad",
+     "place_id": "ChIJnc_Ad_6XyzsRra12TaQv6P4",
+     "rating": 4.8,
+     "reviews": 8073,
+     "type": "Hospital",
+     "address": "Building, Road no:12, Raichandani Construction, Sri Ram Nagar Colony, Banjara Hills, Hyderabad, Telangana 500028",
+     "lat": 17.4077701,
+     "lng": 78.4446554,
+     "km": null,
+     "status": "ok",
+     "low_read": 7,
+     "complete": true,
+     "low_status": "ok",
+     "new_status": "ok",
+     "complaints": 1,
+     "complaints_recent": 1,
+     "complaints_recent_procedure": 0,
+     "newest_complaint": "2024-10-20",
+     "replied": 0,
+     "new_read": 7,
+     "new_critical": 1,
+     "low_stars_no_issue": 0,
+     "new_span": [
+      "2023-11-14",
+      "2026-02-02"
+     ],
+     "themes": {
+      "billing": 0,
+      "insurance": 0,
+      "waiting": 0,
+      "staff": 0,
+      "doctor": 0,
+      "outcome": 0,
+      "discharge": 0,
+      "hygiene": 0,
+      "emergency": 0
+     },
+     "excerpts": [
+      {
+       "id": "ChdDSUhNMG9nS0VJQ0FnSUNYeThlejdRRRAB",
+       "stars": 2.0,
+       "critical": true,
+       "complaint": true,
+       "date": "2024-10-20",
+       "edited": null,
+       "recent": true,
+       "excerpt": "This is to bring in the notice of the concerned.. would like to share my opinion of ur hospital when my mother visited for a regualr health checkup. …",
+       "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYeThlejdRRRAB!2m1!1s0x0:0xfee82fa44d76adad!3m1!1s2@1:CIHM0ogKEICAgICXy8ez7QE%7C%7C?hl=en",
+       "themes": [
+        "staff"
+       ],
+       "scope": "opd_or_consultation",
+       "replied": false,
+       "label_by": "llm"
+      }
+     ]
+    }
+   ],
+   "skipped": [
+    {
+     "title": "Motherhood Hospital",
+     "why": "only 38 reviews"
+    },
+    {
+     "title": "Best Obstetrician - Gynecologist, Maternity and Women's specialist in Banjara Hills || Hig",
+     "why": "Women's health clinic listing"
+    },
+    {
+     "title": "TX Hospitals Banjara Hills : Gynaecology Hospitals in Banjara Hills, Hyderabad | High Risk",
+     "why": "only 0 reviews"
+    },
+    {
+     "title": "Dr. Samatha Kumar | Obstetrician & Gynecologist, High-Risk Pregnancy Specialist in Banjara",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Dr. Kranthi Shilpa | Top Gynecologist Obstetricians Banjara Hills, Hyderabad | CARE Hospit",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Precise Hospital | Multi speciality Surgical Center | Banjara Hills, Hyderabad",
+     "why": "only 47 reviews"
+    },
+    {
+     "title": "Dr Tulika Tayal - Best Fetal Medicine Doctor/Hyderabad",
+     "why": "a doctor's own listing"
+    },
+    {
+     "title": "Sudha Hospital",
+     "why": "only 29 reviews"
+    },
+    {
+     "title": "CARE Hospitals Banjara Hills",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Cloudnine Hospitals - Banjara Hills (The Birthplace) | Best Maternity & Pregnancy Centre",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Ankura Hospital for Women & Children",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Apollo Cradle & Children's Hospital in Jubilee Hills, Hyderabad",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Fernandez Hospital - Banjara Hills Stork Home (Unit 5)",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Tanvir Hospital",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Nirmala Hospital",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "BirthRight Maternity by Rainbow Hospitals, Banjara Hills, Hyderabad",
+     "why": "fewer reviews than the top 3"
+    },
+    {
+     "title": "Nisa Hospital",
+     "why": "fewer reviews than the top 3"
+    }
+   ],
+   "themes": {
+    "billing": "Billing & estimates",
+    "insurance": "Insurance / cashless",
+    "waiting": "Waiting & delays",
+    "staff": "Nursing & staff behaviour",
+    "doctor": "Doctor communication",
+    "outcome": "Outcome & complications",
+    "discharge": "Admission & discharge process",
+    "hygiene": "Cleanliness",
+    "emergency": "Emergency handling"
+   },
+   "asks": [
+    {
+     "theme": "staff",
+     "label": "Nursing & staff behaviour",
+     "question": "Ask about the nurse-to-patient ratio in the ward/ICU and whom to call at night if a request is ignored.",
+     "count": 4,
+     "hospitals": [
+      "Rainbow Children’s Hospital"
+     ]
+    },
+    {
+     "theme": "doctor",
+     "label": "Doctor communication",
+     "question": "Ask which doctor will operate and do the daily rounds, and when the family can speak to them.",
+     "count": 3,
+     "hospitals": [
+      "Rainbow Children’s Hospital",
+      "Care Hospital Outpatient Centre BanjaraH"
+     ]
+    },
+    {
+     "theme": "outcome",
+     "label": "Outcome & complications",
+     "question": "Ask about the infection and complication rates for this procedure and what follow-up is included.",
+     "count": 1,
+     "hospitals": [
+      "Rainbow Children’s Hospital"
+     ]
+    }
+   ],
+   "label_source": "llm",
+   "label_model": "gemini-2.5-flash",
+   "recent_months": 24,
+   "as_of": "2026-10-09",
+   "credits_spent": 7,
+   "searches": 7,
+   "ms": 13159
+  }
+ },
+ {
+  "event": "done",
+  "data": {
+   "credits_spent": 7,
+   "ms": 13159
+  }
+ }
+]

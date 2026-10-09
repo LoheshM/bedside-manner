@@ -13,3 +13,6 @@ notes/
 probe/*.json
 !probe/raw/
 server.log
+
+# recorded demo video (local only)
+demo_video/
